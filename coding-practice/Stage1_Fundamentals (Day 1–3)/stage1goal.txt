@@ -1,0 +1,7 @@
+Range Categorization (Low/Medium/High) → practice loops, conditionals, arrays.
+
+Word Counter → practice objects/maps, string splitting.
+
+Even/Odd Number Splitter → practice filtering arrays.
+
+👉 Goal: Get comfortable returning arrays of objects and handling basic conditions.

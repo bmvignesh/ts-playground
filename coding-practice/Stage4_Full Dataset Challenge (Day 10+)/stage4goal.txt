@@ -1,0 +1,9 @@
+Customer Transactions Dataset (the one I gave earlier).
+
+Group by customerId.
+
+Calculate totals and averages.
+
+Handle edge cases (empty input, single customer).
+
+👉 Goal: Combine all skills (loops, conditionals, grouping, aggregation, modular design).

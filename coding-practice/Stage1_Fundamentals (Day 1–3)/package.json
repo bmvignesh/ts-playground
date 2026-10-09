@@ -1,0 +1,20 @@
+{
+  "name": "stage1-fundamentals",
+  "version": "1.0.0",
+  "description": "typescript practice",
+  "keywords": [
+    "typescript",
+    "practice"
+  ],
+  "license": "ISC",
+  "author": "Vignesh",
+  "type": "commonjs",
+  "main": "exercise-2026-10-05.js",
+  "scripts": {
+  "build": "tsc",
+  "postbuild": "git add . && git commit -m 'Auto-commit after successful build' && git push"
+},
+  "devDependencies": {
+    "typescript": "^7.0.2"
+  }
+}

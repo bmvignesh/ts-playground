@@ -1,0 +1,12 @@
+Objective: Step up from basic conditions into combined logic and transformations.
+
+Exercises:
+
+High‑scorer filter → return only students with scores ≥ 70.
+
+Word categorizer → group words by length and vowel/consonant.
+
+Multi‑criteria splitter → e.g., categorize ages into ranges and also mark “adult/minor.”
+
+Practice Areas: Filtering arrays, chaining .map() + .filter(), combining categorization with transformation.
+👉 Goal: Get comfortable chaining logic together and producing transformed outputs, not just raw categorization.

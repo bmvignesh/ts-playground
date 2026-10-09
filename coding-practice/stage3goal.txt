@@ -1,0 +1,14 @@
+Objective: Introduce TypeScript’s advanced features for cleaner, reusable code.
+
+Exercises:
+
+Use interfaces to define structured data (e.g., Student { name, score, category }).
+
+Apply enums for categories (e.g., enum Grade { Low, Medium, High }).
+
+Write generic functions (e.g., a reusable categorizer that works for numbers, strings, or objects).
+
+Practice switch‑case logic for multi‑branch categorization.
+
+Practice Areas: Strong typing, reusability, abstraction.
+👉 Goal: Move from “just working code” to well‑typed, scalable code that feels like production‑ready TypeScript.

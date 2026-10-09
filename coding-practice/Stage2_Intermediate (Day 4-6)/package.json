@@ -1,0 +1,21 @@
+{
+  "name": "stage2_intermediate",
+  "version": "1.0.0",
+  "description": "Stage 2 TypeScript practice",
+  "keywords": [
+    "typescript",
+    "practice"
+  ],
+  "license": "ISC",
+  "author": "Vignesh",
+  "type": "commonjs",
+  "main": "exercise-2026-10-09.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/exercise-2026-10-09.js",
+    "postbuild": "git add . && git commit -m \"Stage 2 auto-commit after build\" && git push"
+  },
+  "devDependencies": {
+    "typescript": "^7.0.2"
+  }
+}
