@@ -170,7 +170,7 @@ for (let x of tests)
     }
         
 }
-console.log('Test name is: '+testname);
+console.log(testname +' - '+longestduration);
 let Passes=0, Failures =0;
 testCasesa.filter(test=>test.status === 'PASS' ? Passes++ : Failures++);
 console.log('Passes: ' +Passes);
