@@ -118,7 +118,7 @@ const testCasesa = [
 ];
 const failtest = testCasesa.filter(test => test.status === 'FAIL');
 for (let n of failtest) {
-    console.log('Failed test name is ' + n.name);
+    console.log(n.name);
 }
 console.log('Total execution time is : ' + testCasesa.reduce((acc, curr) => (acc + curr.duration), 0));
 const tests = testCasesa.filter(test => test.duration);
