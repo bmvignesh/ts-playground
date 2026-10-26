@@ -132,4 +132,4 @@ const testCases = [
 ];
 
 let result = testCases.filter(test=>test.status==='FAIL');
-console.log(result);
+console.log(result[0]);

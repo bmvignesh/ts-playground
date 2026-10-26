@@ -100,4 +100,4 @@ const testCases = [
     { name: "Profile", status: "PASS" }
 ];
 let result = testCases.filter(test => test.status === 'FAIL');
-console.log(result);
+console.log(result[0]);
