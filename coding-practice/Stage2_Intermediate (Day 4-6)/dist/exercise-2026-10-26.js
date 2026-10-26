@@ -121,3 +121,4 @@ for (let n of failtest) {
     console.log('Failed test name is ' + n.name);
 }
 console.log('Total execution time is : ' + testCasesa.reduce((acc, curr) => (acc + curr.duration), 0));
+console.log('Longest running test is : ' + testCasesa.filter(test => Math.max(test.duration)));
