@@ -92,3 +92,7 @@ const student3: Studenta = {
 console.log(student1.id +' '+ student1.name +' '+ student1.grade);
 console.log(student2.id +' '+ student2.name +' '+ student2.grade);
 console.log(student3.id +' '+ student3.name +' '+ student3.grade);
+
+//filter
+const ages: number[] = [15, 18, 22, 17, 30, 14];
+console.log(ages.filter(a=>a>=18));
