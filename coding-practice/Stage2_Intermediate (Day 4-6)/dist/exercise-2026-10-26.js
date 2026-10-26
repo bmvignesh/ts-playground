@@ -64,4 +64,4 @@ const student3 = {
     name: "Kumar",
     grade: 'C'
 };
-console.log('Details of student 1 :' + student1);
+console.log('Details of student 1 :' + student1.grade + student1.id + student1.name);
