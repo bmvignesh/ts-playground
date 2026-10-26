@@ -70,3 +70,8 @@ console.log(student3.id + ' ' + student3.name + ' ' + student3.grade);
 //filter
 const ages = [15, 18, 22, 17, 30, 14];
 console.log(ages.filter(a => a >= 18));
+//map
+const numbera = [10, 15, 20, 25, 30];
+let converted = [];
+numbera.map(a => a % 2 == 0 ? converted.push('EVEN') : converted.push('ODD'));
+console.log(converted);
