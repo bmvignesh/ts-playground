@@ -121,8 +121,10 @@ for (let n of failtest) {
     console.log('Failed test name is ' + n.name);
 }
 console.log('Total execution time is : ' + testCasesa.reduce((acc, curr) => (acc + curr.duration), 0));
-const duration = testCasesa.filter(test => test.duration);
-console.log(duration);
+const tests = testCasesa.filter(test => test.duration);
+for (let duration of tests) {
+    console.log(duration.duration);
+}
 let Passes = 0, Failures = 0;
 testCasesa.filter(test => test.status === 'PASS' ? Passes++ : Failures++);
 console.log('Passes: ' + Passes);
