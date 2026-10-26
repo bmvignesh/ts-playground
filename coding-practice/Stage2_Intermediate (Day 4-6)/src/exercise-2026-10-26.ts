@@ -159,10 +159,16 @@ for(let n of failtest)
 
 console.log('Total execution time is : ' +testCasesa.reduce((acc,curr)=>(acc+curr.duration),0));
 const tests = testCasesa.filter(test=>test.duration);
-for (let duration of tests)
+let longestduration = 0;
+for (let x of tests)
 {
-    console.log(duration.duration);
+    if(x.duration > longestduration)
+    {
+        longestduration =x.duration;
+    }
+        
 }
+console.log('Longest duration is: '+longestduration);
 let Passes=0, Failures =0;
 testCasesa.filter(test=>test.status === 'PASS' ? Passes++ : Failures++);
 console.log('Passes: ' +Passes);
