@@ -159,4 +159,4 @@ for(let n of failtest)
 
 console.log('Total execution time is : ' +testCasesa.reduce((acc,curr)=>(acc+curr.duration),0));
 const duration = testCasesa.filter(test=>test.duration);
-console.log(duration[0].duration);
+console.log(duration);
