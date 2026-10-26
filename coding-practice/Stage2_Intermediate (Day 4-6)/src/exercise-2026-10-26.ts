@@ -154,5 +154,5 @@ const testCasesa = [
 const failtest = testCasesa.filter(test=>test.status === 'FAIL');
 for(let n of failtest)
 {
-    console.log(n.name);
+    console.log('Failed test name'+n+':is '+n.name);
 }
