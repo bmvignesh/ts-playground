@@ -51,3 +51,17 @@ function square(a:number)
     return a*a;
 }
 console.log('Square is: ' +square(5));
+
+//Bonus challenge
+
+const names = ["Vignesh", "Raj", "Kumar", "A"];
+
+for(let name of names)
+{
+    if(name.length>=5)
+    {
+        console.log(name+ 'is a Long name');
+    }
+    else
+        console.log(name+ 'is a short name');
+}
