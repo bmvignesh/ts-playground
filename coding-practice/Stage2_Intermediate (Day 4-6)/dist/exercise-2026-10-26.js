@@ -95,7 +95,7 @@ const highestsal = salaries.reduce((highest, currsal) => {
     else
         return highest;
 }, salaries[0]);
-console.log(highestsal);
+console.log('Highest salary is: ' + highestsal);
 const executionTimes = [2.5, 1.8, 3.2, 2.1, 4.0];
 let total = executionTimes.reduce((acc, time) => (acc + time), 0);
 console.log('Total execution time is: ' + total);
