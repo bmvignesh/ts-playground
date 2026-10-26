@@ -160,3 +160,7 @@ for(let n of failtest)
 console.log('Total execution time is : ' +testCasesa.reduce((acc,curr)=>(acc+curr.duration),0));
 const duration = testCasesa.filter(test=>test.duration);
 console.log(duration);
+let Passes=0, Failures =0;
+testCasesa.filter(test=>test.status === 'PASS' ? Passes++ : Failures++);
+console.log('Passes: ' +Passes);
+console.log('Failures: '+Failures);
