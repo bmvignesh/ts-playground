@@ -75,3 +75,15 @@ const numbera = [10, 15, 20, 25, 30];
 let converted = [];
 numbera.map(a => a % 2 == 0 ? converted.push('EVEN') : converted.push('ODD'));
 console.log(converted);
+//QA Automation Real-world Scenario
+const testResults = [
+    "PASS",
+    "FAIL",
+    "PASS",
+    "PASS",
+    "FAIL"
+];
+let Passed = 0, Failed = 0;
+testResults.map(a => a === "PASS" ? Passed++ : Failed++);
+console.log('Passed: ' + Passed);
+console.log('Failed: ' + Failed);
