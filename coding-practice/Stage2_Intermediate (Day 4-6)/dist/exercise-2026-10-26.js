@@ -130,7 +130,7 @@ for (let x of tests) {
         testname = x.name;
     }
 }
-console.log(testname + ' - ' + longestduration);
+console.log(testname + ' - ' + longestduration + ' seconds');
 let Passes = 0, Failures = 0;
 testCasesa.filter(test => test.status === 'PASS' ? Passes++ : Failures++);
 console.log('Passes: ' + Passes);
