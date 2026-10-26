@@ -13,3 +13,8 @@ for(let i=1;i<=20;i++)
     else
         console.log(i+" is Odd");
 }
+
+//sum of array
+const numbers: number[] = [12, 15, 20, 8, 30];
+let result = numbers.reduce((acc,value)=>(acc+value),0);
+console.log(result);
