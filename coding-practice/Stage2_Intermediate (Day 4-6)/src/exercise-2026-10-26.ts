@@ -32,3 +32,14 @@ for(let a=0;a<marks.length;a++)
         largest = marks[a];
 }
 console.log('Largest number in the array is: ' +largest);
+
+//count vowels
+const word: string = "Automation";
+let count=0;
+for(let ch of word)
+{
+    if(ch.toLowerCase() === 'a' || ch.toLowerCase() === 'e' || ch.toLowerCase() === 'i' 
+    || ch.toLowerCase() === 'o' || ch.toLowerCase() === 'u')
+        count++;
+}
+console.log('Count of vowels is: '+count);
