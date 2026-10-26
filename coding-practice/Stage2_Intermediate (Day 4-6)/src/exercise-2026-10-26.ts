@@ -22,10 +22,10 @@ for(let a of numbers)
 {
  sum = sum+a;
 }
-console.log('Sum of array is:' +sum);
+console.log('Sum of array is: ' +sum);
 //largest number
 const marks: number[] = [65, 72, 91, 88, 54];
-let largest = 0;
+let largest = marks[0];
 for(let a=0;a<marks.length;a++)
 {
     if(marks[a]>largest)
