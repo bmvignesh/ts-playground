@@ -43,3 +43,11 @@ for(let ch of word)
         count++;
 }
 console.log('Count of vowels is: '+count);
+
+//square function
+
+function square(a:number)
+{
+    return a*a;
+}
+console.log('Square is: ' +square(5));
