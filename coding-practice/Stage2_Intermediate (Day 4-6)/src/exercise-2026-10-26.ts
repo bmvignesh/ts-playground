@@ -60,8 +60,8 @@ for(let name of names)
 {
     if(name.length>=5)
     {
-        console.log(name+ 'is a Long name');
+        console.log(name+ ' is a Long name');
     }
     else
-        console.log(name+ 'is a short name');
+        console.log(name+ ' is a short name');
 }
