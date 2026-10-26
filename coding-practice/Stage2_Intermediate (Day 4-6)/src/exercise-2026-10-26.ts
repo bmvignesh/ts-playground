@@ -100,8 +100,7 @@ console.log(ages.filter(a=>a>=18));
 //map
 const numbera: number[] = [10, 15, 20, 25, 30];
 let converted:string[] = [];
-numbera.map(a=>a%2==0 ? converted.push('EVEN'): converted.push('ODD'));
-console.log(converted);
+console.log(numbera.map(a=>a%2==0 ? 'EVEN': 'ODD'));
 
 //QA Automation Real-world Scenario
 const testResults = [
@@ -115,3 +114,7 @@ let Passed = 0, Failed=0;
 testResults.map(a=>a==="PASS" ? Passed++ : Failed++);
 console.log('Passed: '+Passed);
 console.log('Failed: '+Failed);
+
+//Reduce
+const salaries = [50000, 65000, 45000, 70000];
+console.log('Total salary is :' +salaries.reduce((acc,sal)=>(acc+sal),0));
