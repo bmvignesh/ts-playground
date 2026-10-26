@@ -14,5 +14,5 @@ for (let i = 1; i <= 20; i++) {
 const numbers = [12, 15, 20, 8, 30];
 console.log(numbers.reduce((acc, value) => (acc + value), 0));
 for (let a of numbers) {
-    console.log(numbers[a]);
+    console.log(a);
 }

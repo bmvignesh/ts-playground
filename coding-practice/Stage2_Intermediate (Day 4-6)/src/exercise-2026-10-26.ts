@@ -20,5 +20,5 @@ console.log(numbers.reduce((acc,value)=>(acc+value),0));
 
 for(let a of numbers)
 {
-    console.log(numbers[a]);
+    console.log(a);
 }
