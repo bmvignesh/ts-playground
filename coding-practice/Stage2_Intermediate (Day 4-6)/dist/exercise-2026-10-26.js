@@ -17,7 +17,7 @@ let sum = 0;
 for (let a of numbers) {
     sum = sum + a;
 }
-console.log(sum);
+console.log('Sum of array is:' + sum);
 //largest number
 const marks = [65, 72, 91, 88, 54];
 let largest = 0;
@@ -25,4 +25,4 @@ for (let a = 0; a < marks.length; a++) {
     if (marks[a] > largest)
         largest = marks[a];
 }
-console.log(largest);
+console.log('Largest number in the array is: ' + largest);
