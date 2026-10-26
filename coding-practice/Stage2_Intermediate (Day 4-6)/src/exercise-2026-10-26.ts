@@ -152,4 +152,7 @@ const testCasesa = [
 ];
 
 const failtest = testCasesa.filter(test=>test.status === 'FAIL');
-console.log(failtest.length);
+for(let n of failtest)
+{
+    console.log(n.name);
+}
