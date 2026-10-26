@@ -89,6 +89,13 @@ console.log('Failed: ' + Failed);
 //Reduce
 const salaries = [50000, 65000, 45000, 70000];
 console.log('Total salary is :' + salaries.reduce((acc, sal) => (acc + sal), 0));
+const highestsal = salaries.reduce((highest, currsal) => {
+    if (currsal > highest)
+        return currsal;
+    else
+        return highest;
+}, salaries[0]);
+console.log(highestsal);
 const executionTimes = [2.5, 1.8, 3.2, 2.1, 4.0];
 let total = executionTimes.reduce((acc, time) => (acc + time), 0);
 console.log('Total execution time is: ' + total);
