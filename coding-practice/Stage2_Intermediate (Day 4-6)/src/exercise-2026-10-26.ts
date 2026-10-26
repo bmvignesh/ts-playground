@@ -158,4 +158,4 @@ for(let n of failtest)
 }
 
 console.log('Total execution time is : ' +testCasesa.reduce((acc,curr)=>(acc+curr.duration),0));
-console.log('Longest running test is : '+testCasesa.filter(test=>Math.max(test.duration)));
+console.log('Longest running test is : '+testCasesa.filter(test=>test.duration));
