@@ -118,5 +118,5 @@ const testCasesa = [
 ];
 const failtest = testCasesa.filter(test => test.status === 'FAIL');
 for (let n of failtest) {
-    console.log('Failed test name' + n + ':is ' + n.name);
+    console.log('Failed test name is ' + n.name);
 }
