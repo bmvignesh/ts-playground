@@ -151,5 +151,5 @@ const testCasesa = [
     { name: "Payment", duration: 10, status: "FAIL" }
 ];
 
-const failedtestnames = testCasesa.filter(test=>test.status === 'FAIL');
-console.log(failedtestnames);
+const failtest = testCasesa.filter(test=>test.status === 'FAIL');
+console.log(failtest.length);
