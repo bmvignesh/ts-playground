@@ -17,8 +17,9 @@ for(let i=1;i<=20;i++)
 //sum of array
 const numbers: number[] = [12, 15, 20, 8, 30];
 console.log(numbers.reduce((acc,value)=>(acc+value),0));
-
+let sum=0;
 for(let a of numbers)
 {
-    console.log(a);
+ sum = sum+a;
 }
+console.log(sum);
