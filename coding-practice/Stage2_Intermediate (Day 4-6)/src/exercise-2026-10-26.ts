@@ -141,3 +141,15 @@ const testCases = [
 
 let result = testCases.filter(test=>test.status==='FAIL');
 console.log(result[0].name);
+
+//Real QA Automation
+const testCasesa = [
+    { name: "Login", duration: 5, status: "PASS" },
+    { name: "Search", duration: 2, status: "PASS" },
+    { name: "Checkout", duration: 8, status: "FAIL" },
+    { name: "Profile", duration: 3, status: "PASS" },
+    { name: "Payment", duration: 10, status: "FAIL" }
+];
+
+const failedtestnames = testCasesa.filter(test=>test.status === 'FAIL');
+console.log(failedtestnames);
