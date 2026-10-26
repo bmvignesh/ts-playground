@@ -93,3 +93,11 @@ const executionTimes = [2.5, 1.8, 3.2, 2.1, 4.0];
 let total = executionTimes.reduce((acc, time) => (acc + time), 0);
 console.log('Total execution time is: ' + total);
 console.log('Average execution time is : ' + (Math.floor(total / executionTimes.length)));
+const testCases = [
+    { name: "Login", status: "PASS" },
+    { name: "Checkout", status: "FAIL" },
+    { name: "Search", status: "PASS" },
+    { name: "Profile", status: "PASS" }
+];
+let result = testCases.filter(test => test.status === 'FAIL');
+console.log(result);
