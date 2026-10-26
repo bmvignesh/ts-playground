@@ -49,3 +49,19 @@ for (let name of names) {
     else
         console.log(name + ' is a short name');
 }
+const student1 = {
+    id: 1,
+    name: "Vignesh",
+    grade: 'A'
+};
+const student2 = {
+    id: 2,
+    name: "Madhesh",
+    grade: 'B'
+};
+const student3 = {
+    id: 3,
+    name: "Kumar",
+    grade: 'C'
+};
+console.log('Details of student 1 :' + student1);
