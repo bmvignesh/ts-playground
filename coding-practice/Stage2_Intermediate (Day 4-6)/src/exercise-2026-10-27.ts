@@ -11,6 +11,6 @@ const e:Employees = {
     Designation :'QA Manager'
 };
 
-console.log(e.Name);
+console.log(e +e.Name);
 console.log(e.Age);
 console.log(e.Designation);
