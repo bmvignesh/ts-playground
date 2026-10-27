@@ -77,3 +77,11 @@ console.log('Count Passed test cases');
 console.log(testsa.filter(t => t.status === 'Passed').length);
 console.log('Count Failed test cases');
 console.log(testsa.filter(t => t.status === 'Failed').length);
+var Environment;
+(function (Environment) {
+    Environment["DEV"] = "DEV";
+    Environment["QA"] = "QA";
+    Environment["UAT"] = "UAT";
+    Environment["PROD"] = "PROD";
+})(Environment || (Environment = {}));
+console.log('Current environment: ' + Environment.QA);

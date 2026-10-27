@@ -130,3 +130,13 @@ console.log(testsa.filter(t=>t.status==='Passed').length);
 console.log('Count Failed test cases');
 
 console.log(testsa.filter(t=>t.status==='Failed').length);
+
+enum Environment
+{
+    DEV = 'DEV',
+    QA = 'QA',
+    UAT = 'UAT',
+    PROD = 'PROD'
+}
+
+console.log('Current environment: ' +Environment.QA);
