@@ -26,7 +26,11 @@ const emp2 = {
 };
 console.log('Emp1 Name :' + emp1.name);
 console.log('Emp1 Age :' + emp1.age);
-console.log('Emp1 Designation :' + emp1.designation);
 console.log('Emp2 Name :' + emp2.name);
 console.log('Emp2 Age :' + emp2.age);
 console.log('Emp2 Designation :' + emp2.designation);
+let employeeId;
+employeeId = 101;
+console.log(employeeId);
+employeeId = 'EMP101';
+console.log(employeeId);
