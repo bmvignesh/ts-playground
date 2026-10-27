@@ -104,3 +104,17 @@ type TestCase = {
     title: string;
     status: "Passed" | "Failed" | "Blocked";
 };
+
+const testsa:TestCase[] = [
+ {id:1,title:"Login",status:"Passed"},
+ {id:2,title:"Checkout",status:"Failed"},
+ {id:3,title:"Search",status:"Passed"},
+ {id:4,title:"Profile",status:"Blocked"}
+]
+
+console.log('Print all test cases:');
+
+for(let test of testsa)
+{
+    console.log(test.id +' - '+test.title+' - '+test.status);
+}
