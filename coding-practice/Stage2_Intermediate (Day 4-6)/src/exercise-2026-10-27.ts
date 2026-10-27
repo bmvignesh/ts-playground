@@ -116,5 +116,5 @@ console.log('Print all test cases:');
 
 for(let test of testsa)
 {
-    console.log(test.id +' - '+test.title+' - '+test.status);
+    console.log('Id - ' +test.id +' Title - '+test.title+' Name- '+test.status);
 }
