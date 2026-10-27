@@ -52,6 +52,6 @@ const emps = [
     { name: "Ravi", age: 30 },
     { name: "Priya", age: 28 }
 ];
-for (let emp of emps) {
-    console.log(+emp.name - emp.age);
+for (let e of emps) {
+    console.log(e.name + '-' + e.age);
 }

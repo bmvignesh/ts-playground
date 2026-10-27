@@ -86,7 +86,7 @@ const emps:emp[] = [
  {name:"Priya", age:28}
 ]
 
-for (let emp of emps)
+for (let e of emps)
 {
-    console.log(+emp.name - emp.age);
+    console.log(e.name +'-'+ e.age);
 }
