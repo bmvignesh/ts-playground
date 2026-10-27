@@ -140,3 +140,36 @@ enum Environment
 }
 
 console.log('Current environment: ' +Environment.QA);
+
+enum Priority
+{
+    Low = 'Low',
+    Medium = 'Medium',
+    High = 'High',
+    Critical = 'Critical'
+}
+
+console.log('Bug priority :' +Priority.Critical);
+
+function printstring(value:string):string
+{
+    return value;
+}
+
+console.log(printstring('Vignesh'));
+
+function printnumber(value:number):number
+{
+    return value;
+}
+
+console.log(printnumber(123));
+
+function printvalue<T>(value:T):T
+{
+    return value;
+}
+
+console.log(printvalue<string>('Vignesh'));
+console.log(printvalue<number>(123));
+console.log(printvalue<boolean>(false));

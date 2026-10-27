@@ -85,3 +85,25 @@ var Environment;
     Environment["PROD"] = "PROD";
 })(Environment || (Environment = {}));
 console.log('Current environment: ' + Environment.QA);
+var Priority;
+(function (Priority) {
+    Priority["Low"] = "Low";
+    Priority["Medium"] = "Medium";
+    Priority["High"] = "High";
+    Priority["Critical"] = "Critical";
+})(Priority || (Priority = {}));
+console.log('Bug priority :' + Priority.Critical);
+function printstring(value) {
+    return value;
+}
+console.log(printstring('Vignesh'));
+function printnumber(value) {
+    return value;
+}
+console.log(printnumber(123));
+function printvalue(value) {
+    return value;
+}
+console.log(printvalue('Vignesh'));
+console.log(printvalue(123));
+console.log(printvalue(false));
