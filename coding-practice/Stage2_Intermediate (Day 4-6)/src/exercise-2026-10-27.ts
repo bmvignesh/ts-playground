@@ -165,6 +165,7 @@ function printnumber(value:number):number
 
 console.log(printnumber(123));
 
+//Generic Solution
 function printvalue<T>(value:T):T
 {
     return value;
@@ -174,6 +175,7 @@ console.log(printvalue<string>('Vignesh'));
 console.log(printvalue<number>(123));
 console.log(printvalue<boolean>(false));
 
+//Generic with Arrays
 function displayItems<T>(items:T[]):void
 {
     for(let item of items)
@@ -184,3 +186,29 @@ function displayItems<T>(items:T[]):void
 
 displayItems<string>(['chrome','safari','firefox']);
 displayItems<number>([10,20,30]);
+
+//QA Example
+
+const executionIds = ["TC001","TC002","TC003"];
+
+function printlist<T>(list:T[]):void
+{
+    list.forEach(item=>console.log(item));
+}
+printlist<string>(executionIds);
+
+//Generic Object
+
+interface ApiResponse<T>
+{
+    success:boolean;
+    data:T;
+}
+
+const response:ApiResponse<string> = {
+    success:true,
+    data:"Login successful"
+};
+
+console.log(response.data);
+

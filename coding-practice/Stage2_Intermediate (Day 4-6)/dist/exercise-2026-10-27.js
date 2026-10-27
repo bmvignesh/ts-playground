@@ -101,12 +101,14 @@ function printnumber(value) {
     return value;
 }
 console.log(printnumber(123));
+//Generic Solution
 function printvalue(value) {
     return value;
 }
 console.log(printvalue('Vignesh'));
 console.log(printvalue(123));
 console.log(printvalue(false));
+//Generic with Arrays
 function displayItems(items) {
     for (let item of items) {
         console.log(item);
@@ -114,3 +116,14 @@ function displayItems(items) {
 }
 displayItems(['chrome', 'safari', 'firefox']);
 displayItems([10, 20, 30]);
+//QA Example
+const executionIds = ["TC001", "TC002", "TC003"];
+function printlist(list) {
+    list.forEach(item => console.log(item));
+}
+printlist(executionIds);
+const response = {
+    success: true,
+    data: "Login successful"
+};
+console.log(response.data);
