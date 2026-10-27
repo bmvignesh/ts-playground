@@ -34,3 +34,7 @@ employeeId = 101;
 console.log(employeeId);
 employeeId = 'EMP101';
 console.log(employeeId);
+function greet(name) {
+    return 'Hello ' + name;
+}
+console.log(greet('Vignesh'));
