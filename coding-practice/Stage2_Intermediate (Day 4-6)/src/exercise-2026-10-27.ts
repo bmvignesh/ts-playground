@@ -1,16 +1,16 @@
-interface Employees
+interface Employee
 {
-    Name:string;
-    Age:number;
-    Designation:string;
+    name:string;
+    age:number;
+    designation:string;
 }
 
-const e:Employees = {
-    Name:'Vignesh',
-    Age:42,
-    Designation :'QA Manager'
+const e:Employee = {
+    name:'Vignesh',
+    age:42,
+    designation :'QA Manager'
 };
 
-console.log(e +e.Name);
-console.log(e.Age);
-console.log(e.Designation);
+console.log('Name '+e.name);
+console.log('Age '+e.age);
+console.log('Designation '+e.designation);
