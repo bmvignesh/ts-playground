@@ -118,3 +118,15 @@ for(let test of testsa)
 {
     console.log('Id - ' +test.id +' Title - '+test.title+' Name- '+test.status);
 }
+
+console.log('Print only Passed test cases:');
+
+console.log(testsa.filter(t=>t.status==='Passed'));
+
+console.log('Count Passed test cases');
+
+console.log(testsa.filter(t=>t.status==='Passed').length);
+
+console.log('Count Failed test cases');
+
+console.log(testsa.filter(t=>t.status==='Failed').length);
