@@ -107,3 +107,10 @@ function printvalue(value) {
 console.log(printvalue('Vignesh'));
 console.log(printvalue(123));
 console.log(printvalue(false));
+function displayItems(items) {
+    for (let item of items) {
+        console.log(item);
+    }
+}
+displayItems(['chrome', 'safari', 'firefox']);
+displayItems([10, 20, 30]);

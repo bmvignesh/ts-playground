@@ -173,3 +173,14 @@ function printvalue<T>(value:T):T
 console.log(printvalue<string>('Vignesh'));
 console.log(printvalue<number>(123));
 console.log(printvalue<boolean>(false));
+
+function displayItems<T>(items:T[]):void
+{
+    for(let item of items)
+    {
+        console.log(item);
+    }
+}
+
+displayItems<string>(['chrome','safari','firefox']);
+displayItems<number>([10,20,30]);
