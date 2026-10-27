@@ -53,5 +53,6 @@ const emps = [
     { name: "Priya", age: 28 }
 ];
 for (let e of emps) {
-    console.log(e.name + '-' + e.age);
+    console.log(e.name + ' - ' + e.age);
 }
+console.log(emps.filter(e => e.age > 30));
