@@ -98,3 +98,9 @@ for(let e of emps)
         console.log(e.name+' - '+e.age);
     }
 }
+console.log(emps.reduce((acc,curr)=>(acc+curr.age),0));
+type TestCase = {
+    id: number;
+    title: string;
+    status: "Passed" | "Failed" | "Blocked";
+};
