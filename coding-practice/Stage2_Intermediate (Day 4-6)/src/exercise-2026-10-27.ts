@@ -5,10 +5,12 @@ interface Employees
     Designation:string;
 }
 
-const employee:Employees = {
+const e:Employees = {
     Name:'Vignesh',
     Age:42,
     Designation :'QA Manager'
 };
 
-console.log(`${employee}`);
+console.log(e.Name);
+console.log(e.Age);
+console.log(e.Designation);
