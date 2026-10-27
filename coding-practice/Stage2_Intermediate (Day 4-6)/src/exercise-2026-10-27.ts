@@ -90,4 +90,11 @@ for (let e of emps)
 {
     console.log(e.name +' - '+ e.age);
 }
-console.log(emps.filter(e=>e.age>30));
+
+for(let e of emps)
+{
+    if(e.age>30)
+    {
+        console.log(e.name+' - '+e.age);
+    }
+}
