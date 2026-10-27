@@ -69,7 +69,7 @@ console.log(add(2,6));
 
 function introduce(name:string,designation?:string):void
 {
-    console.log(name + designation);
+    console.log(name + ' '+designation);
 }
 introduce("Vignesh","QA Manager");
 introduce("Ravi");
