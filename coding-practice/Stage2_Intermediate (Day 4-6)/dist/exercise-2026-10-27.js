@@ -47,3 +47,11 @@ function introduce(name, designation) {
 }
 introduce("Vignesh", "QA Manager");
 introduce("Ravi");
+const emps = [
+    { name: "Vignesh", age: 39 },
+    { name: "Ravi", age: 30 },
+    { name: "Priya", age: 28 }
+];
+for (let emp of emps) {
+    console.log(+emp.name - emp.age);
+}

@@ -73,3 +73,20 @@ function introduce(name:string,designation?:string):void
 }
 introduce("Vignesh","QA Manager");
 introduce("Ravi");
+
+type emp = {
+    name:string;
+    age:number;
+}
+
+const emps:emp[] = [
+
+ {name:"Vignesh", age:39},
+ {name:"Ravi", age:30},
+ {name:"Priya", age:28}
+]
+
+for (let emp of emps)
+{
+    console.log(+emp.name - emp.age);
+}
