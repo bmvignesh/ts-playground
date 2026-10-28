@@ -298,3 +298,15 @@ empls.forEach(e=>{
         console.log(e.name +' -> No manager')
 });
 
+//2. Generic Function
+
+function getFirstItem<T>(items:T[]):T
+{
+    return items[0];
+}
+
+const numbers1 = [100,200,300];
+const names1 = ["Vignesh","Kani","Murugan"];
+
+getFirstItem<number>(numbers1);
+getFirstItem<string>(names1);
