@@ -43,14 +43,21 @@ console.log('Current Environment: '+Environmenta.QA);
 
 //Exercise 5: Automation Framework Class
 
-class Framwework
+class Framework
 {
    name:string ='';
    language:string=''; 
-   display()
+   display():void
    {
-
+        console.log("Framework name: "+this.name);
+        console.log("Language: "+this.language);
    }   
 }
+
+const fw = new Framework();
+fw.name = 'Playwright';
+fw.language = 'Typescript';
+fw.display();
+
 
 
