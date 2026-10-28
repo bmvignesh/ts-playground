@@ -144,12 +144,8 @@ const defects1 = [
     { id: 103, severity: "Critical" },
     { id: 104, severity: "Medium" }
 ];
-console.log(defects1.filter(t => {
-    if (t.severity === 'High')
-        return 'High';
-    if (t.severity === 'Critical')
-        return 'Critical';
-}));
+const criticalDefects = defects1.filter(d => d.severity === 'High' || d.severity === 'Critical');
+console.log(criticalDefects);
 //Exercise 4: Class with Method
 class Employeez {
     constructor(name, salary) {
