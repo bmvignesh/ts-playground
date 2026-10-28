@@ -227,13 +227,13 @@ class Employeez
     isHighearner()
     {
         if(this.salary>75000)
-            console.log('Yes');
+            return 'Yes';
         else
-            console.log('No');
+            return 'No';
     }
 }
 const em1 = new Employeez('Kani',35000);
 const em2 = new Employeez('Murugan',80000);
 
-em1.isHighearner();
-em2.isHighearner();
+console.log(em1.name + em1.isHighearner);
+console.log(em2.name + em2.isHighearner);
