@@ -59,5 +59,21 @@ fw.name = 'Playwright';
 fw.language = 'Typescript';
 fw.display();
 
+//Exercise 6 (Most Important)
 
+function executionStatus(time:number)
+{
+    if(time<=2)
+        console.log('Fast');
+    else if(time>2 && time <=5 )
+    {
+        console.log('Normal');
+    }
+    else
+        console.log('Slow');
+}
+
+executionStatus(1.5);
+executionStatus(3.4);
+executionStatus(6.2);
 
