@@ -358,7 +358,7 @@ const apiResponses = [
  {endpoint:"/payment",status:404}
 ];
 
-console.log(apiResponses.filter(t=>{
+apiResponses.filter(t=>{
     if(t.status!=200)
-        t.endpoint
-}));
+        console.log(t.endpoint)
+});
