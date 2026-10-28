@@ -106,3 +106,22 @@ function printValue(value) {
 printValue("Automation");
 printValue(100);
 printValue(true);
+//Exercise 5 (Most Important)
+class TestCases {
+    constructor(testName, status) {
+        this.testName = '';
+        this.status = '';
+        this.testName = testName;
+        this.status = status;
+    }
+    display() {
+        console.log('Test Name: ' + this.testName);
+        console.log('Status Name: ' + this.status);
+    }
+}
+const tc1 = new TestCases('Login Test', 'Passed');
+const tc2 = new TestCases('Search Test', 'Failed');
+const tc3 = new TestCases('Print Test', 'Blocked');
+console.log('Test 1 details: ' + tc1.display());
+console.log('Test 2 details: ' + tc2.display());
+console.log('Test 3 details: ' + tc3.display());
