@@ -82,3 +82,9 @@ executionStatus(6.2);
 const executionTimesa = [2.5, 1.8, 3.2, 2.1, 4.0];
 console.log('Total: '+executionTimesa.reduce((acc,curr)=>(acc+curr),0));
 console.log('Average: '+(executionTimesa.reduce((acc,curr)=>(acc+curr),0)/executionTimesa.length).toFixed(2));
+console.log('Max: '+executionTimesa.reduce((acc,curr)=>{
+    return curr > acc ? curr : acc;
+}));
+console.log('Min: '+executionTimesa.reduce((acc,curr)=>{
+    return curr<acc ? curr:acc;
+}));
