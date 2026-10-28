@@ -179,3 +179,11 @@ function launchBrowser(browser) {
 }
 launchBrowser(Browser.CHROME);
 launchBrowser(Browser.EDGE);
+//Exercise 6 (QA Automation Scenario)
+const testResults3 = [
+    { name: "Login", time: 2.1 },
+    { name: "Search", time: 6.3 },
+    { name: "Checkout", time: 1.9 },
+    { name: "Payment", time: 7.2 }
+];
+console.log(testResults3.filter(t => t.time > 5).forEach(t => console.log(t.name)));
