@@ -322,3 +322,13 @@ const testsx = [
 
 const dur = testsx.forEach(t=>t.duration);
 console.log(dur);
+
+//4. QA Dashboard Challenge
+
+const executions2 = [
+ {module:"Login", passed:20, failed:2},
+ {module:"Search", passed:15, failed:5},
+ {module:"Payment", passed:10, failed:1}
+];
+
+executions2.forEach(t=>console.log(t.module+' : '+(t.passed/(t.passed+t.failed))*100));
