@@ -264,4 +264,4 @@ const testResults3 = [
  {name:"Payment",time:7.2}
 ];
 
-console.log(testResults3.filter(t=>t.time>5).forEach(t=>console.log(t.name)));
+console.log(testResults3.filter(t=>t.time>5).forEach(t=>t.name));
