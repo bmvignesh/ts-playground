@@ -320,8 +320,9 @@ const testsx = [
  {name:"Payment",duration:1}
 ];
 
-const dur = testsx.forEach(t=>t.duration);
-console.log(dur);
+testsx
+    .sort((a,b) => a.duration - b.duration)
+    .forEach(t => console.log(t.name));
 
 //4. QA Dashboard Challenge
 
@@ -331,4 +332,30 @@ const executions2 = [
  {module:"Payment", passed:10, failed:1}
 ];
 
-executions2.forEach(t=>console.log(t.module+' : '+(t.passed/(t.passed+t.failed)*100).toFixed(2))+'%');
+executions2.forEach(t=>console.log(t.module+' : '+(t.passed/(t.passed+t.failed)*100).toFixed(2)));
+
+//5. Interview Question
+
+const nums = [1,2,3,4,5];
+
+const results = nums
+                .filter(n => n % 2 === 0)
+                .map(n => n * 10)
+                .reduce((acc,curr)=>acc+curr,0);
+
+console.log(results);
+
+//nums.filter will return [2,4]
+//.map will return [20,40]
+//.reduce will add 20 and 40 and results is 60
+
+//Next Challenge (Automation Engineer Level)
+
+const apiResponses = [
+ {endpoint:"/login",status:200},
+ {endpoint:"/search",status:500},
+ {endpoint:"/profile",status:200},
+ {endpoint:"/payment",status:404}
+];
+
+console.log(apiResponses.filter(t=>t.status!=200));
