@@ -22,10 +22,10 @@ const testsb = [
     "Search",
     "ProfileUpdate"
 ];
-console.log(testsb.reduce((acc, curr) => {
+console.log('Longest Test Name: ' + testsb.reduce((acc, curr) => {
     let max = curr[0].length;
     if (curr.length > max)
-        return acc;
+        return curr;
     else
         return curr;
 }));
