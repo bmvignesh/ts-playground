@@ -226,11 +226,10 @@ class Employeez
     }
     isHighearner()
     {
-        let flag:string='';
         if(this.salary>75000)
-            flag = 'Yes'
+            console.log('Yes');
         else
-            flag = 'No'
+            console.log('No');
     }
 }
 const em1 = new Employeez('Kani',35000);
