@@ -65,4 +65,4 @@ executionStatus(6.2);
 //Bonus Challenge (QA Manager Level)
 const executionTimesa = [2.5, 1.8, 3.2, 2.1, 4.0];
 console.log('Total: ' + executionTimesa.reduce((acc, curr) => (acc + curr), 0));
-console.log('Average: ' + executionTimesa.reduce((acc, curr) => (acc + curr), 0) / executionTimesa.length);
+console.log('Average: ' + (executionTimesa.reduce((acc, curr) => (acc + curr), 0) / executionTimesa.length).toFixed(2));
