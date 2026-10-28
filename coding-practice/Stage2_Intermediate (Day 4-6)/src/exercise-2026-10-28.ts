@@ -265,3 +265,14 @@ const testResults3 = [
 ];
 
 testResults3.filter(t=>t.time>5).forEach(t=>console.log(t.name));
+
+//Bonus Challenge (QA Manager Level)
+
+const executions = [
+ {module:"Login",passed:20,failed:2},
+ {module:"Search",passed:15,failed:5},
+ {module:"Payment",passed:10,failed:1}
+];
+
+console.log(executions.reduce((acc,curr)=>(acc+curr.passed),0));
+console.log(executions.reduce((acc,curr)=>(acc+curr.failed),0));
