@@ -78,4 +78,5 @@ const employees = [
     { name: 'Senthil', department: 'Manager', salary: 90000 },
     { name: 'Murugan', department: 'Staff', salary: 71000 }
 ];
-console.log(employees.forEach(t => (t.salary > 70000)));
+let a = employees.forEach(t => (t.salary > 70000));
+console.log(a);
