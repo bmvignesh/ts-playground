@@ -85,3 +85,10 @@ employees.forEach(emp => {
     if (emp.salary > 70000)
         console.log(emp.salary);
 });
+//Exercise 2: Map
+const testCasesb = [
+    "Login",
+    "Search",
+    "Checkout"
+];
+console.log(testCasesb.map(t => t.concat("TC_", t)));
