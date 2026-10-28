@@ -110,5 +110,5 @@ employees.forEach((emp, index) => {
 });
 
 employees.forEach(emp=>{
-    console.log(`High Salary : ${emp.salary>70000}`);
+    console.log(emp.salary>70000);
 });
