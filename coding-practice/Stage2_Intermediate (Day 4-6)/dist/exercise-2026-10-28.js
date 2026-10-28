@@ -261,4 +261,7 @@ const tests1 = [
     { testName: 'Modify Test', browser: 'Firefox', passed: true },
     { testName: 'Print Test', browser: 'Mozilla', passed: false }
 ];
-tests1.forEach(t => console.log(t.passed === true));
+tests1.forEach(t => {
+    if (t.passed)
+        console.log(t.testName);
+});
