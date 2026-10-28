@@ -105,5 +105,5 @@ const employees: Employeea[] = [
     { name: 'Murugan', department: 'Staff', salary: 71000 }
 ];
 
-let a =employees.forEach(t=>(t.salary>70000));
-console.log(a);
+let b = employees.forEach(t=>(t.salary>70000));
+console.log(b);
