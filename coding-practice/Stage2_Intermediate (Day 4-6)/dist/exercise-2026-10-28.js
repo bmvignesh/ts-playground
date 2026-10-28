@@ -72,27 +72,10 @@ console.log('Max: ' + executionTimesa.reduce((acc, curr) => {
 console.log('Min: ' + executionTimesa.reduce((acc, curr) => {
     return curr < acc ? curr : acc;
 }));
-const emp11 = {
-    name: 'Kani',
-    department: 'Admin',
-    salary: 10000
-};
-const emp21 = {
-    name: 'Muthu',
-    department: 'Clerk',
-    salary: 15000
-};
-const emp31 = {
-    name: 'Senthil',
-    department: 'Manager',
-    salary: 20000
-};
-const emp41 = {
-    name: 'Murugan',
-    department: 'Staff',
-    salary: 14000
-};
-console.log('Employee 1 name: ' + emp11.name);
-console.log('Employee 2 name: ' + emp21.name);
-console.log('Employee 3 name: ' + emp31.name);
-console.log('Employee 4 name: ' + emp41.name);
+const employees = [
+    { name: 'Kani', department: 'Admin', salary: 60000 },
+    { name: 'Muthu', department: 'Clerk', salary: 75000 },
+    { name: 'Senthil', department: 'Manager', salary: 90000 },
+    { name: 'Murugan', department: 'Staff', salary: 71000 }
+];
+employees.forEach(t => console.log(t.salary > 7000));

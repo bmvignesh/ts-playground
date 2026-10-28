@@ -98,28 +98,11 @@ interface Employeea
     salary:number
 }
 
-const emp11: Employeea = {
-    name: 'Kani',
-    department: 'Admin',
-    salary: 10000
-}
-const emp21: Employeea = {
-    name: 'Muthu',
-    department: 'Clerk',
-    salary: 15000
-}
-const emp31: Employeea = {
-    name: 'Senthil',
-    department: 'Manager',
-    salary: 20000
-}
-const emp41: Employeea = {
-    name: 'Murugan',
-    department: 'Staff',
-    salary: 14000
-}
+const employees: Employeea[] = [
+        { name: 'Kani', department: 'Admin', salary: 60000 },
+    { name: 'Muthu', department: 'Clerk', salary: 75000 },
+    { name: 'Senthil', department: 'Manager', salary: 90000 },
+    { name: 'Murugan', department: 'Staff', salary: 71000 }
+];
 
-console.log('Employee 1 name: '+emp11.name);
-console.log('Employee 2 name: '+emp21.name);
-console.log('Employee 3 name: '+emp31.name);
-console.log('Employee 4 name: '+emp41.name);
+employees.forEach(t=>console.log(t.salary>7000));
