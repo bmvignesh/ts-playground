@@ -217,4 +217,5 @@ const testsx = [
     { name: "Checkout", duration: 8 },
     { name: "Payment", duration: 1 }
 ];
-testsx.forEach(t => console.log(t.duration));
+const dur = testsx.forEach(t => t.duration);
+console.log(dur);

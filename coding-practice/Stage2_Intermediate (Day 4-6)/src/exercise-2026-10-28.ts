@@ -320,4 +320,5 @@ const testsx = [
  {name:"Payment",duration:1}
 ];
 
-testsx.forEach(t=>console.log(t.duration));
+const dur = testsx.forEach(t=>t.duration);
+console.log(dur);
