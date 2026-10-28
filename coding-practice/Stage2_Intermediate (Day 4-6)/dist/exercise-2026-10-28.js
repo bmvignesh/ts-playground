@@ -31,9 +31,9 @@ console.log('Longest Test Name: ' + testsb.reduce((acc, curr) => {
 }));
 var Environmenta;
 (function (Environmenta) {
-    Environmenta[Environmenta["DEV"] = 0] = "DEV";
-    Environmenta[Environmenta["QA"] = 1] = "QA";
-    Environmenta[Environmenta["UAT"] = 2] = "UAT";
-    Environmenta[Environmenta["PROD"] = 3] = "PROD";
+    Environmenta["DEV"] = "DEV";
+    Environmenta["QA"] = "QA";
+    Environmenta["UAT"] = "UAT";
+    Environmenta["PROD"] = "PROD";
 })(Environmenta || (Environmenta = {}));
 console.log('Current Environment: ' + Environmenta.QA);

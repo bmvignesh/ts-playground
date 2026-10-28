@@ -36,10 +36,10 @@ console.log('Longest Test Name: '+testsb.reduce((acc,curr)=>{
 
 enum Environmenta
 {
-    DEV,
-    QA,
-    UAT,
-    PROD
+    DEV = 'DEV',
+    QA = 'QA',
+    UAT = 'UAT',
+    PROD = 'PROD'
 }
 
 console.log('Current Environment: '+Environmenta.QA);
