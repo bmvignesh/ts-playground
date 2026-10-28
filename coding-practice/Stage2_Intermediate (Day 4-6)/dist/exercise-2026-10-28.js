@@ -81,6 +81,6 @@ const employees = [
 employees.forEach((emp, index) => {
     console.log(`Employee ${index + 1}: ${emp.name}`);
 });
-employees.forEach(emp => {
-    console.log(emp.salary > 70000);
-});
+employees.reduce((acc, curr) => {
+    return curr.salary > 70000 ? curr.salary : 0;
+}, 0);
