@@ -308,5 +308,5 @@ function getFirstItem<T>(items:T[]):T
 const numbers1 = [100,200,300];
 const names1 = ["Vignesh","Kani","Murugan"];
 
-getFirstItem<number>(numbers1);
-getFirstItem<string>(names1);
+console.log(getFirstItem<number>(numbers1));
+console.log(getFirstItem<string>(names1));

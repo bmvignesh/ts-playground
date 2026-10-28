@@ -208,5 +208,5 @@ function getFirstItem(items) {
 }
 const numbers1 = [100, 200, 300];
 const names1 = ["Vignesh", "Kani", "Murugan"];
-getFirstItem(numbers1);
-getFirstItem(names1);
+console.log(getFirstItem(numbers1));
+console.log(getFirstItem(names1));
