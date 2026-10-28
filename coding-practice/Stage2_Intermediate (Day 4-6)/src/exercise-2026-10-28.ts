@@ -16,3 +16,20 @@ failedtests.forEach(t=>console.log(t.testName));
 //Count Pass and Fail
 console.log('Passed: '+passedtests.length);
 console.log('Failed: '+failedtests.length);
+
+
+//Find longest test name
+const testsb = [
+  "Login",
+  "UserRegistration",
+  "Search",
+  "ProfileUpdate"
+];
+
+console.log(testsb.reduce((acc,curr)=>{
+    let max=curr[0];
+    if(curr.length>max.length)
+        return curr
+    else
+        return acc;
+}));
