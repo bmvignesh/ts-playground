@@ -109,6 +109,6 @@ employees.forEach((emp, index) => {
     console.log(`Employee ${index + 1}: ${emp.name}`);
 });
 
-employees.reduce((acc,curr)=>{
+console.log(employees.reduce((acc,curr)=>{
     return curr.salary > 70000 ? curr.salary:0;
-},0);
+},0));
