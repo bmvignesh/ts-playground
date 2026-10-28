@@ -1,3 +1,4 @@
+//Find Failed Test Cases
 const testResultsb = [
   { testName: "Login", status: "Pass" },
   { testName: "Checkout", status: "Fail" },
@@ -6,7 +7,12 @@ const testResultsb = [
 ];
 
 const failedtests = testResultsb.filter(t=>t.status==='Fail');
+const passedtests = testResultsb.filter(t=>t.status==='Pass');
 //console.log(failedtests[0].testName);
 //console.log(failedtests[1].testName);
 console.log('Printing only failed tests using forEach: ');
 failedtests.forEach(t=>console.log(t.testName));
+
+//Count Pass and Fail
+console.log('Passed: '+passedtests.length);
+console.log('Failed: '+failedtests.length);
