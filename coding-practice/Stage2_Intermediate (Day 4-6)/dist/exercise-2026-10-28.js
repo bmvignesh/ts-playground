@@ -144,4 +144,7 @@ const defects1 = [
     { id: 103, severity: "Critical" },
     { id: 104, severity: "Medium" }
 ];
-console.log(defects1.filter(t => t.severity != 'Medium'));
+console.log(defects1.filter(t => {
+    if (t.severity === 'High' || t.severity === 'Critical')
+        return t.severity;
+}));
