@@ -291,5 +291,10 @@ const empls:Empl[] = [
     {id:3,name:"Murugan"}
 ]
 
-empls.forEach(e=>console.log(e.manager));
+empls.forEach(e=>{
+    if(e.manager)
+        console.log(e.name +' -> '+e.manager)
+    else
+        console.log(e.name +' -> No manager')
+});
 
