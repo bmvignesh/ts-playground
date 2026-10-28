@@ -91,4 +91,4 @@ const testCasesb = [
     "Search",
     "Checkout"
 ];
-console.log(testCasesb.map(t => t.concat("TC_")));
+console.log(testCasesb.map(t => ("TC_").concat(t)));
