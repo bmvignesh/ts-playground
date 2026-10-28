@@ -275,3 +275,21 @@ const executions = [
 
 console.log(executions.reduce((acc,curr)=>(acc+curr.passed),0));
 console.log(executions.reduce((acc,curr)=>(acc+curr.failed),0));
+
+//1. Optional Properties
+
+interface Empl
+{
+    id:number;
+    name:string;
+    manager?:string;
+}
+
+const empls:Empl[] = [
+     {id:1,name:"Vignesh"},
+    {id:2,name:"Kani",manager:"Ravi"},
+    {id:3,name:"Murugan"}
+]
+
+empls.forEach(e=>console.log(e.manager));
+

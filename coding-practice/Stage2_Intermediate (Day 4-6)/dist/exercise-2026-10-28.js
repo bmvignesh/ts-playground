@@ -191,3 +191,9 @@ const executions = [
 ];
 console.log(executions.reduce((acc, curr) => (acc + curr.passed), 0));
 console.log(executions.reduce((acc, curr) => (acc + curr.failed), 0));
+const empls = [
+    { id: 1, name: "Vignesh" },
+    { id: 2, name: "Kani", manager: "Ravi" },
+    { id: 3, name: "Murugan" }
+];
+empls.forEach(e => console.log(e.manager));
