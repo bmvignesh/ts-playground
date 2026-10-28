@@ -152,9 +152,9 @@ console.log(defects1.filter(t => {
 }));
 //Exercise 4: Class with Method
 class Employeez {
-    constructor() {
-        this.name = '';
-        this.salary = 0;
+    constructor(name, salary) {
+        this.name = name;
+        this.salary = salary;
     }
     isHighearner() {
         let flag = '';
@@ -164,11 +164,7 @@ class Employeez {
             flag = 'No';
     }
 }
-const em1 = new Employeez();
-const em2 = new Employeez();
-em1.name = 'Kani';
-em1.salary = 35000;
-em2.name = 'Murugan';
-em2.salary = 80000;
+const em1 = new Employeez('Kani', 35000);
+const em2 = new Employeez('Murugan', 80000);
 console.log(em1.isHighearner());
 console.log(em2.isHighearner());
