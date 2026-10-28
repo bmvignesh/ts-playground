@@ -360,5 +360,5 @@ const apiResponses = [
 
 console.log(apiResponses.filter(t=>{
     if(t.status!=200)
-        return t.endpoint
+        t.endpoint
 }));
