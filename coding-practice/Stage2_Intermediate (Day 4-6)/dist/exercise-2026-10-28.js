@@ -122,6 +122,6 @@ class TestCases {
 const tc1 = new TestCases('Login Test', 'Passed');
 const tc2 = new TestCases('Search Test', 'Failed');
 const tc3 = new TestCases('Print Test', 'Blocked');
-console.log('Test 1 details: ' + tc1.display());
-console.log('Test 2 details: ' + tc2.display());
-console.log('Test 3 details: ' + tc3.display());
+tc1.display();
+tc2.display();
+tc3.display();
