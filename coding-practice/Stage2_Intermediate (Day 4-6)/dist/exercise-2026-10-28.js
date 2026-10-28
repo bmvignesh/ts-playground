@@ -92,3 +92,10 @@ const testCasesb = [
     "Checkout"
 ];
 console.log(testCasesb.map(t => ("TC_").concat(t)));
+//Exercise 3: Find
+const defects = [
+    { id: 101, status: "Open" },
+    { id: 102, status: "Closed" },
+    { id: 103, status: "In Progress" }
+];
+console.log(defects.find(d => d.id === 102));
