@@ -181,3 +181,11 @@ const testCases1 = [
 ];
 
 console.log(testCases1.filter(test=>test.status==='Fail').map(t=>`FAILED_${t.name}`));
+
+//Exercise 2: Find Highest Execution Time
+
+const executionTimes1 = [2.4, 4.1, 1.8, 5.7, 3.2];
+
+console.log('Highest Execution Time: '+executionTimes1.reduce((acc,curr)=>{
+    return curr>acc ? curr:acc;
+}));
