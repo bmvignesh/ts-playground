@@ -1,4 +1,4 @@
-//Find Failed Test Cases
+//Exercise 1: Find Failed Test Cases
 const testResultsb = [
   { testName: "Login", status: "Pass" },
   { testName: "Checkout", status: "Fail" },
@@ -13,12 +13,12 @@ const passedtests = testResultsb.filter(t=>t.status==='Pass');
 console.log('Printing only failed tests using forEach: ');
 failedtests.forEach(t=>console.log(t.testName));
 
-//Count Pass and Fail
+//Exercise 2: Count Pass and Fail
 console.log('Passed: '+passedtests.length);
 console.log('Failed: '+failedtests.length);
 
 
-//Find longest test name
+//Exercise 3: Find Longest Test Name
 const testsb = [
   "Login",
   "UserRegistration",
@@ -27,13 +27,10 @@ const testsb = [
 ];
 
 console.log('Longest Test Name: '+testsb.reduce((acc,curr)=>{
-    let max=curr[0].length;
-    if(curr.length>max)
-        return curr
-    else
-        return curr
+    return curr.length > acc.length ? curr:acc;
 }));
 
+//Exercise 4: Environment Enum
 enum Environmenta
 {
     DEV = 'DEV',
@@ -43,3 +40,17 @@ enum Environmenta
 }
 
 console.log('Current Environment: '+Environmenta.QA);
+
+//Exercise 5: Automation Framework Class
+
+class Framwework
+{
+   name:string ='';
+   language:string=''; 
+   display()
+   {
+
+   }   
+}
+
+
