@@ -320,4 +320,4 @@ const testsx = [
  {name:"Payment",duration:1}
 ];
 
-console.log(testsx.sort(t=>t.duration));
+console.log(testsx.forEach(t=>t.duration));
