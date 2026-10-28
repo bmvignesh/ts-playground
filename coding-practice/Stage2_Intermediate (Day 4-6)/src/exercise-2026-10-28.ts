@@ -366,6 +366,8 @@ apiResponses.filter(t=>{
 console.log(apiResponses.reduce((acc,curr)=>{
     let count=0;
     if(curr.status=200)
+    {
         count++;
+    }
     return acc;
 }));
