@@ -5,4 +5,6 @@ const testResultsb = [
   { testName: "Payment", status: "Fail" }
 ];
 
-console.log(testResultsb.filter(t=>t.status==='Fail'));
+const failedtests = testResultsb.filter(t=>t.status==='Fail');
+console.log(failedtests[0].testName);
+console.log(failedtests[1].testName);
