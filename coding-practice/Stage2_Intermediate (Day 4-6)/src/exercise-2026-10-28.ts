@@ -170,3 +170,14 @@ const tc3 = new TestCases('Print Test','Blocked');
 tc1.display();
 tc2.display();
 tc3.display();
+
+//Exercise 1: Filter + Map Combination
+
+const testCases1 = [
+  { name: "Login", status: "Pass" },
+  { name: "Search", status: "Fail" },
+  { name: "Checkout", status: "Pass" },
+  { name: "Payment", status: "Fail" }
+];
+
+console.log(testCases1.filter(test=>test.status==='Fail').map(t=>`FAILED_${t}`));
