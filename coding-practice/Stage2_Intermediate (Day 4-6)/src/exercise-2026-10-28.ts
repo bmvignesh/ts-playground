@@ -208,5 +208,5 @@ const defects1: Defect[] =
 
 console.log(defects1.filter(t=>{
     if(t.severity==='High' || t.severity ==='Critical')
-        return t.severity;
+        console.log(t.severity);
 }));
