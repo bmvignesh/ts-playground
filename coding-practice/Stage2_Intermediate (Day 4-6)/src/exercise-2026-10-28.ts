@@ -130,4 +130,15 @@ const defects = [
  {id:103,status:"In Progress"}
 ];
 
-console.log(defects.find(d=>d.id===102));
+console.log('Defect 102 details: '+defects.find(d=>d.id===102));
+
+//Exercise 4: Generic Function
+
+function printValue<T>(value:T):void
+{
+    console.log(value);
+}
+
+printValue("Automation");
+printValue(100);
+printValue(true);
