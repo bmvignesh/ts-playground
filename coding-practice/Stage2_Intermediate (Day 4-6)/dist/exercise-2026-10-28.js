@@ -78,5 +78,8 @@ const employees = [
     { name: 'Senthil', department: 'Manager', salary: 90000 },
     { name: 'Murugan', department: 'Staff', salary: 71000 }
 ];
+employees.forEach((emp, index) => {
+    console.log(`Employee ${index + 1}: ${emp.name}`);
+});
 let b = employees.forEach(t => (t.salary > 70000));
 console.log(b);
