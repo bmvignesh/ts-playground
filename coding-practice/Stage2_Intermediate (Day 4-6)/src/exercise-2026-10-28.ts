@@ -237,3 +237,20 @@ const em2 = new Employeez('Murugan',80000);
 
 console.log(em1.name +' : '+ em1.isHighearner());
 console.log(em2.name +' : '+ em2.isHighearner());
+
+//Exercise 5: Enum + Function
+
+enum Browser
+{
+   CHROME='CHROME',
+   FIREFOX='FIREFOX',
+   EDGE='EDGE'
+}
+
+function launchBrowser(browser:Browser)
+{
+    console.log(Browser);
+}
+
+launchBrowser(Browser.CHROME);
+launchBrowser(Browser.EDGE);

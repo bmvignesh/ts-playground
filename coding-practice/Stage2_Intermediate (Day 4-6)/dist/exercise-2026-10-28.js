@@ -167,3 +167,15 @@ const em1 = new Employeez('Kani', 35000);
 const em2 = new Employeez('Murugan', 80000);
 console.log(em1.name + ' : ' + em1.isHighearner());
 console.log(em2.name + ' : ' + em2.isHighearner());
+//Exercise 5: Enum + Function
+var Browser;
+(function (Browser) {
+    Browser["CHROME"] = "CHROME";
+    Browser["FIREFOX"] = "FIREFOX";
+    Browser["EDGE"] = "EDGE";
+})(Browser || (Browser = {}));
+function launchBrowser(browser) {
+    console.log(Browser);
+}
+launchBrowser(Browser.CHROME);
+launchBrowser(Browser.EDGE);
