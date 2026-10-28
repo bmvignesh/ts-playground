@@ -249,7 +249,7 @@ enum Browser
 
 function launchBrowser(browser:Browser)
 {
-    console.log(Browser);
+    console.log(browser);
 }
 
 launchBrowser(Browser.CHROME);

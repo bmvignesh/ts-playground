@@ -175,7 +175,7 @@ var Browser;
     Browser["EDGE"] = "EDGE";
 })(Browser || (Browser = {}));
 function launchBrowser(browser) {
-    console.log(Browser);
+    console.log(browser);
 }
 launchBrowser(Browser.CHROME);
 launchBrowser(Browser.EDGE);
