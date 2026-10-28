@@ -235,5 +235,5 @@ class Employeez
 const em1 = new Employeez('Kani',35000);
 const em2 = new Employeez('Murugan',80000);
 
-console.log(em1.name +' : '+ em1.isHighearner);
-console.log(em2.name +' : '+ em2.isHighearner);
+console.log(em1.name +' : '+ em1.isHighearner());
+console.log(em2.name +' : '+ em2.isHighearner());
