@@ -23,8 +23,8 @@ const testsb = [
     "ProfileUpdate"
 ];
 console.log(testsb.reduce((acc, curr) => {
-    let max = curr[0];
-    if (curr.length > max.length)
+    let max = curr[0].length;
+    if (curr.length > max)
         return curr;
     else
         return acc;
