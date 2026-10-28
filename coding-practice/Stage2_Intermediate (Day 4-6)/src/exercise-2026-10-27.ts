@@ -212,3 +212,9 @@ const response:ApiResponse<string> = {
 
 console.log(response.data);
 
+enum TestStatus
+{
+    Pass = 'Pass',
+    Fail = 'Fail',
+    Blocked = 'Blocked'
+}

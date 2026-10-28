@@ -127,3 +127,9 @@ const response = {
     data: "Login successful"
 };
 console.log(response.data);
+var TestStatus;
+(function (TestStatus) {
+    TestStatus["Pass"] = "Pass";
+    TestStatus["Fail"] = "Fail";
+    TestStatus["Blocked"] = "Blocked";
+})(TestStatus || (TestStatus = {}));
