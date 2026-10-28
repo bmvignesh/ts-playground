@@ -138,3 +138,10 @@ const executionTimes1 = [2.4, 4.1, 1.8, 5.7, 3.2];
 console.log('Highest Execution Time: ' + executionTimes1.reduce((acc, curr) => {
     return curr > acc ? curr : acc;
 }));
+const defects1 = [
+    { id: 101, severity: "High" },
+    { id: 102, severity: "Low" },
+    { id: 103, severity: "Critical" },
+    { id: 104, severity: "Medium" }
+];
+console.log(defects1.filter(t => t.severity != 'Medium'));
