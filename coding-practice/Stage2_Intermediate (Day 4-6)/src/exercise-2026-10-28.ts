@@ -180,4 +180,4 @@ const testCases1 = [
   { name: "Payment", status: "Fail" }
 ];
 
-console.log(testCases1.filter(test=>test.status==='Fail').map(t=>`FAILED_${t}`));
+console.log(testCases1.filter(test=>test.status==='Fail').map(t=>`FAILED_${t.name}`));
