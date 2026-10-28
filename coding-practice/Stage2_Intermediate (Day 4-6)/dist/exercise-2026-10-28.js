@@ -255,3 +255,10 @@ console.log(apiResponses.reduce((acc, curr) => {
     }
     return acc;
 }));
+const tests1 = [
+    { testName: 'Login Test', browser: 'Chrome', passed: true },
+    { testName: 'Search Test', browser: 'Safari', passed: false },
+    { testName: 'Modify Test', browser: 'Firefox', passed: true },
+    { testName: 'Print Test', browser: 'Mozilla', passed: false }
+];
+tests1.forEach(t => console.log(t.passed === true));

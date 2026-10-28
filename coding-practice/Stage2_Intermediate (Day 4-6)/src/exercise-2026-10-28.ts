@@ -371,3 +371,19 @@ console.log(apiResponses.reduce((acc,curr)=>{
     }
     return acc;
 }));
+
+interface TestExecution
+{
+    testName:string;
+    browser:string;
+    passed:boolean;
+}
+
+const tests1:TestExecution[] = [
+    {testName:'Login Test',browser:'Chrome',passed:true},
+    {testName:'Search Test',browser:'Safari',passed:false},
+    {testName:'Modify Test',browser:'Firefox',passed:true},
+    {testName:'Print Test',browser:'Mozilla',passed:false}
+];
+
+tests1.forEach(t=>console.log(t.passed===true));
