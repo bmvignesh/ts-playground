@@ -310,3 +310,14 @@ const names1 = ["Vignesh","Kani","Murugan"];
 
 console.log(getFirstItem<number>(numbers1));
 console.log(getFirstItem<string>(names1));
+
+//3. Sort Test Results
+
+const testsx = [
+ {name:"Login",duration:4},
+ {name:"Search",duration:2},
+ {name:"Checkout",duration:8},
+ {name:"Payment",duration:1}
+];
+
+console.log(testsx.sort(t=>t.duration));
