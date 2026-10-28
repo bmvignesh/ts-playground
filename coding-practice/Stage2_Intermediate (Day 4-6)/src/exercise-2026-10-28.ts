@@ -33,3 +33,13 @@ console.log('Longest Test Name: '+testsb.reduce((acc,curr)=>{
     else
         return curr
 }));
+
+enum Environmenta
+{
+    DEV,
+    QA,
+    UAT,
+    PROD
+}
+
+console.log('Current Environment: '+Environment.QA);
