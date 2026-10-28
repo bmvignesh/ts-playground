@@ -281,7 +281,7 @@ const result4 = arr
     .map(x => x / 10)
     .filter(x => x > 1)
     .reduce((a, b) => a + b, 0);
-console.log(result);
+console.log(result4);
 //result4.map will return [1,2,3]
 //.filter will return [2,3]
 //.reduce will return 5

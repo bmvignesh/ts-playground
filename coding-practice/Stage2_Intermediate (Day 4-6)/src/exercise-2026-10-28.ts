@@ -418,7 +418,7 @@ const result4 = arr
       .filter(x => x > 1)
       .reduce((a,b) => a + b, 0);
 
-console.log(result);
+console.log(result4);
 
 //result4.map will return [1,2,3]
 //.filter will return [2,3]
