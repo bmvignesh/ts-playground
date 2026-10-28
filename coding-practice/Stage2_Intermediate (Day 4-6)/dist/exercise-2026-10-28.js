@@ -244,4 +244,7 @@ const apiResponses = [
     { endpoint: "/profile", status: 200 },
     { endpoint: "/payment", status: 404 }
 ];
-console.log(apiResponses.filter(t => t.status != 200));
+console.log(apiResponses.filter(t => {
+    if (t.status != 200)
+        return t.endpoint;
+}));
