@@ -8,5 +8,5 @@ const testResultsb = [
 const failedtests = testResultsb.filter(t=>t.status==='Fail');
 //console.log(failedtests[0].testName);
 //console.log(failedtests[1].testName);
-
+console.log('Printing only failed tests using forEach: ');
 failedtests.forEach(t=>console.log(t.testName));
