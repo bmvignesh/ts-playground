@@ -225,4 +225,4 @@ const executions2 = [
     { module: "Search", passed: 15, failed: 5 },
     { module: "Payment", passed: 10, failed: 1 }
 ];
-executions2.forEach(t => console.log(t.module + ' : ' + `(${t.passed}/(${t.passed}+${t.failed})*100).toFixed(2)%`));
+executions2.forEach(t => console.log(t.module + ' : ' + `(${t.passed}/(${t.passed}+${t.failed})*100).toFixed(2)`));
