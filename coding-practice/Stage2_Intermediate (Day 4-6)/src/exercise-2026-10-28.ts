@@ -29,7 +29,7 @@ const testsb = [
 console.log(testsb.reduce((acc,curr)=>{
     let max=curr[0].length;
     if(curr.length>max)
-        return curr
-    else
         return acc
+    else
+        return curr
 }));
