@@ -212,3 +212,26 @@ console.log(defects1.filter(t=>{
     if(t.severity==='Critical')
         return 'Critical'
 }));
+
+//Exercise 4: Class with Method
+
+class Employeez
+{
+    name:string='';
+    salary:number=0;
+    isHighearner()
+    {
+        let flag:string='';
+        if(this.salary>75000)
+            flag = 'Yes'
+        else
+            flag = 'No'
+    }
+}
+const em1 = new Employeez();
+const em2 = new Employeez();
+em1.name = 'Kani'; em1.salary = 35000;
+em2.name = 'Murugan'; em2.salary = 80000;
+
+console.log(em1.isHighearner());
+console.log(em2.isHighearner());
