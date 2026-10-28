@@ -42,4 +42,4 @@ enum Environmenta
     PROD
 }
 
-console.log('Current Environment: '+Environment.QA);
+console.log('Current Environment: '+Environmenta.QA);

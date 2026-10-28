@@ -36,4 +36,4 @@ var Environmenta;
     Environmenta[Environmenta["UAT"] = 2] = "UAT";
     Environmenta[Environmenta["PROD"] = 3] = "PROD";
 })(Environmenta || (Environmenta = {}));
-console.log('Current Environment: ' + Environment.QA);
+console.log('Current Environment: ' + Environmenta.QA);
