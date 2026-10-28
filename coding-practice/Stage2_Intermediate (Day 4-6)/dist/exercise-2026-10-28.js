@@ -82,5 +82,6 @@ employees.forEach((emp, index) => {
     console.log(`Employee ${index + 1}: ${emp.name}`);
 });
 employees.forEach(emp => {
-    console.log(`${emp.salary}`);
+    if (emp.salary > 70000)
+        return emp.salary;
 });
