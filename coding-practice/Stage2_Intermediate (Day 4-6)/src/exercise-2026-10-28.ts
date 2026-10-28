@@ -358,19 +358,16 @@ const apiResponses = [
  {endpoint:"/payment",status:404}
 ];
 
-apiResponses.filter(t=>{
-    if(t.status!=200)
-        console.log(t.endpoint)
-});
+apiResponses
+    .filter(t => t.status !== 200)
+    .forEach(t => console.log(t.endpoint));
 
-console.log(apiResponses.reduce((acc,curr)=>{
-    let count=0;
-    if(curr.status=200)
-    {
-        count++;
-    }
-    return acc;
-}));
+const successCount = apiResponses.reduce(
+    (acc, curr) => curr.status === 200 ? acc + 1 : acc,
+    0
+);
+
+console.log(successCount);
 
 interface TestExecution
 {
@@ -390,3 +387,39 @@ tests1.forEach(t=>{
     if(t.passed)
         console.log(t.testName);
 });
+
+class TestReport {
+    totalTests:number = 0;
+    passedTests:number = 0;
+    failedTests:number = 0;
+
+    getPassPercentage(): number {
+
+        return (
+            this.passedTests /
+            this.totalTests
+        ) * 100;
+    }
+}
+
+const report = new TestReport();
+
+report.totalTests = 50;
+report.passedTests = 45;
+report.failedTests = 5;
+
+console.log(report.getPassPercentage());
+
+//Exercise 5 (Interview Favorite)
+const arr = [10,20,30];
+
+const result4 = arr
+      .map(x => x / 10)
+      .filter(x => x > 1)
+      .reduce((a,b) => a + b, 0);
+
+console.log(result);
+
+//result4.map will return [1,2,3]
+//.filter will return [2,3]
+//.reduce will return 5
