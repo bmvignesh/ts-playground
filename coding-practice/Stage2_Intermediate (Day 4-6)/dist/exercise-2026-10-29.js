@@ -287,5 +287,15 @@ const test = new LoginTest('Chrome');
 test.launch();
 test.execute();
 //Exercise 3: Method Overriding
-class Repport {
+class Report {
+    generate() {
+        console.log(`Generating Generic Report`);
+    }
 }
+class AutomationReport extends Report {
+    generate() {
+        console.log(`Generating Automation Report`);
+    }
+}
+const areport = new AutomationReport();
+areport.generate();
