@@ -53,5 +53,8 @@ const d3 = new Defect(103,'Critical');
 const alldefects: Defect[] = [d1,d2,d3];
 for(let defect of alldefects)
 {
-    console.log(defect.severity);
+    if(defect.severity === 'High' ||defect.severity==='Critical')
+    {
+        console.log(defect.severity);
+    }
 }
