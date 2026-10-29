@@ -514,3 +514,4 @@ class APITest extends aTestCase
 
 const api = new APITest('Login API Test','/login');
 api.run();
+console.log(api.endpoint);
