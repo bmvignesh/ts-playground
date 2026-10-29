@@ -7,11 +7,11 @@ const runs = [
     { testName: "Payment", browser: "Chrome" },
     { testName: "Checkout", browser: "Firefox" }
 ];
-runs.reduce((acc, curr) => {
+console.log(runs.reduce((acc, curr) => {
     let chromecount = 0, firefoxcount = 0;
     if (curr.browser === 'Chrome')
         chromecount++;
     if (curr.browser === 'Firefox')
         firefoxcount++;
     return acc;
-});
+}));
