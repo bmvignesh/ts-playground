@@ -127,3 +127,27 @@ console.log(summary.totalPassed);
 console.log(summary.totalFailed);
 console.log(totalTests);
 console.log(passPercentage.toFixed(2));
+
+//Exercise 1: Browser-wise Test Count using reduce()
+
+interface TestRuns
+{
+    testName:string;
+    browser:string;
+}
+
+const testruns:TestRuns[] = 
+[
+    { testName: "Login", browser: "Chrome" },
+    { testName: "Search", browser: "Firefox" },
+    { testName: "Profile", browser: "Chrome" },
+    { testName: "Payment", browser: "Chrome" },
+    { testName: "Checkout", browser: "Firefox" }
+];
+
+const browserCount = testruns.reduce<Record<string,number>>((acc,curr)=>{
+    acc[curr.browser] = (acc[curr.browser]||0)+1;
+    return acc;
+},{});
+
+console.log(browserCount);
