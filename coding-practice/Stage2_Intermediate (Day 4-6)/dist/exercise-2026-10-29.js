@@ -8,10 +8,6 @@ const runs = [
     { testName: "Checkout", browser: "Firefox" }
 ];
 console.log(runs.reduce((acc, curr) => {
-    let chromecount = 0, firefoxcount = 0;
-    if (curr.browser === 'Chrome')
-        chromecount++;
-    if (curr.browser === 'Firefox')
-        firefoxcount++;
+    acc[curr.browser] = (acc[curr.browser] ?? 0) + 1;
     return acc;
-}));
+}, {}));

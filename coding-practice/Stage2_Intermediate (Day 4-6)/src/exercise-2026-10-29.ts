@@ -15,11 +15,7 @@ const runs:TestRun[] = [
     { testName: "Checkout", browser: "Firefox" }
 ];
 
-console.log(runs.reduce((acc,curr)=>{
-    let chromecount=0,firefoxcount=0;
-    if(curr.browser === 'Chrome')
-             chromecount++;
-    if(curr.browser === 'Firefox')
-            firefoxcount++;
-        return acc;
-}));
+console.log(runs.reduce<Record<string, number>>((acc, curr) => {
+    acc[curr.browser] = (acc[curr.browser] ?? 0) + 1;
+    return acc;
+}, {}));
