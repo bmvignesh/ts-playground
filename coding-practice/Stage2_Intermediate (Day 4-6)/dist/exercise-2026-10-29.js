@@ -178,7 +178,7 @@ console.log(b2.isSuccessful());
 console.log(b3.isSuccessful());
 //Generic Function
 function getLastItem(items) {
-    return items[items.length + 1];
+    return items[items.length];
 }
 const inums = [10, 20, 30, 40];
 const inames = ["Chrome", "Firefox", "Edge"];
