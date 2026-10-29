@@ -264,6 +264,7 @@ class Manager extends Workerz {
     constructor(name, department) {
         super(name);
         this.department = department;
+        console.log(`Department: ${this.department}`);
     }
 }
 const m1 = new Manager("Vignesh", "QA");

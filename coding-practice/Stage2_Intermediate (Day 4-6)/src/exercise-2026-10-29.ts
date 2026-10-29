@@ -400,6 +400,7 @@ class Manager extends Workerz
     {
         super(name);
         this.department = department;
+        console.log(`Department: ${this.department}`);
     }
 }
 
