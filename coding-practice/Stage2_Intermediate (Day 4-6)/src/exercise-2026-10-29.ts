@@ -292,6 +292,6 @@ function printTwice<T>(value:T):void
     console.log(value);
 }
 
-console.log(printTwice<string>("Playwright"));
-console.log(printTwice<number>(100));
-console.log(printTwice<boolean>(true));
+printTwice<string>("Playwright");
+printTwice<number>(100);
+printTwice<boolean>(true);

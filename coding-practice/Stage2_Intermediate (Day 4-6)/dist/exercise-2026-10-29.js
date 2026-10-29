@@ -188,6 +188,6 @@ function printTwice(value) {
     console.log(value);
     console.log(value);
 }
-console.log(printTwice("Playwright"));
-console.log(printTwice(100));
-console.log(printTwice(true));
+printTwice("Playwright");
+printTwice(100);
+printTwice(true);
