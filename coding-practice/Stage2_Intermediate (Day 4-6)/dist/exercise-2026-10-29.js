@@ -256,20 +256,19 @@ class Workerz {
     constructor(name) {
         this.name = name;
     }
+    display() {
+        console.log(`Employee: ${this.name}`);
+    }
 }
 class Manager extends Workerz {
     constructor(name, department) {
         super(name);
         this.department = department;
     }
-    display() {
-        console.log(`Employee: ${this.name}`);
-        console.log(`Department: ${this.department}`);
-    }
 }
 const m1 = new Manager("Vignesh", "QA");
 m1.display();
-console.log(m1.department);
+console.log('Department: ' + m1.department);
 //Exercise 2: Real Automation Example
 class BaseTest {
     constructor(browser) {
