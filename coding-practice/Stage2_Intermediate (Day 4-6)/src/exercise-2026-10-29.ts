@@ -277,7 +277,7 @@ console.log(b3.isSuccessful());
 //Generic Function
 
 function getLastItem<T>(items:T[]):T{
-    return items[items.length];
+    return items[items.length-1];
 }
 
 const inums = [10,20,30,40];
