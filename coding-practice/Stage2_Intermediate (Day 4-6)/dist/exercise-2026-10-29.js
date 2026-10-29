@@ -402,3 +402,23 @@ class EmailNotification extends aNotification {
 }
 const email = new EmailNotification();
 email.send();
+//Exercise 4: Multi-Level Inheritance
+class Device {
+    powerOn() {
+        console.log(`Device Powered On`);
+    }
+}
+class Laptop extends Device {
+    connectWifi() {
+        console.log(`Wifi connected!!`);
+    }
+}
+class GamingLaptop extends Laptop {
+    startGame() {
+        console.log(`Launching Game`);
+    }
+}
+const laptop = new GamingLaptop();
+laptop.powerOn();
+laptop.connectWifi();
+laptop.startGame();
