@@ -299,3 +299,23 @@ class AutomationReport extends Report {
 }
 const areport = new AutomationReport();
 areport.generate();
+//Exercise 4: Multi-level Inheritance
+class Application {
+    open() {
+        console.log(`Application Opened`);
+    }
+}
+class WebApplication extends Application {
+    login() {
+        console.log('User logged in');
+    }
+}
+class EcommerceApplication extends WebApplication {
+    order() {
+        console.log(`Order placed`);
+    }
+}
+const app = new EcommerceApplication();
+app.open();
+app.login();
+app.order();
