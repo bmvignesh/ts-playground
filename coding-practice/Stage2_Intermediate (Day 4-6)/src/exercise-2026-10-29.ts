@@ -515,3 +515,61 @@ class APITest extends aTestCase
 const api = new APITest('Login API Test','/login');
 api.run();
 console.log(api.endpoint);
+
+//Bonus Challenge
+
+class A
+{
+    display()
+    {
+        console.log('A');
+    }
+}
+
+class B extends A
+{
+    display()
+    {
+        console.log('B');
+    }
+}
+
+const obj = new B();
+obj.display();
+//this will print B
+
+//Exercise 1: Basic Inheritance (Vehicle → Car)
+
+class Vehicle
+{
+    brand:string;
+
+    constructor(brand:string)
+    {
+        this.brand = brand;
+    }
+
+    display()
+    {
+        console.log(`Brand: ${this.brand}`);
+    }
+}
+
+class Car extends Vehicle
+{
+    model:string;
+
+    constructor(brand:string,model:string)
+    {
+        super(brand);
+        this.model = model;
+    }
+    show()
+    {
+        console.log(`Model: ${this.model}`);
+    }
+}
+
+const car1 = new Car('Hyundai','Creta');
+car1.display();
+car1.show();
