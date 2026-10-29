@@ -51,4 +51,4 @@ const d2 = new Defect(102,'Low');
 const d3 = new Defect(103,'Critical');
 
 const alldefects: Defect[] = [d1,d2,d3];
-console.log(alldefects.forEach(t=>t.severity==='High' || t.severity==='Critical'));
+alldefects.forEach(t=>console.log(t.severity==='High' || t.severity==='Critical'));
