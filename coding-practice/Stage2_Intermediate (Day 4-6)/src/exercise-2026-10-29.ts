@@ -146,7 +146,7 @@ const testruns:TestRuns[] =
 ];
 
 const browserCount = testruns.reduce<Record<string,number>>((acc,curr)=>{
-    acc[curr.browser] = (acc[curr.browser]||0)+1;
+    acc[curr.browser] = (acc[curr.browser]??0)+1;
     return acc;
 },{});
 

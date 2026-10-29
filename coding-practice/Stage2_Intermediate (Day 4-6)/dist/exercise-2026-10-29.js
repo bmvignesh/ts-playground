@@ -90,7 +90,7 @@ const testruns = [
     { testName: "Checkout", browser: "Firefox" }
 ];
 const browserCount = testruns.reduce((acc, curr) => {
-    acc[curr.browser] = (acc[curr.browser] || 0) + 1;
+    acc[curr.browser] = (acc[curr.browser] ?? 0) + 1;
     return acc;
 }, {});
 console.log(browserCount);
