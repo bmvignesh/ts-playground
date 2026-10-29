@@ -45,4 +45,4 @@ const modules = [
     { module: "Search", passed: 20, failed: 10 },
     { module: "Payment", passed: 35, failed: 5 }
 ];
-modules.forEach(t => console.log(t.module + ` -> ${((t.passed / (t.passed + t.failed)) * 100).toFixed(2)}%`));
+modules.forEach(t => console.log(`${t.module} -> ${((t.passed / (t.passed + t.failed)) * 100).toFixed(2)}%`));
