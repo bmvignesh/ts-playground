@@ -167,3 +167,24 @@ const failcount = testresults.filter(t=>t.status==='Fail').length;
 const failpercent = failcount/testresults.length*100;
 
 console.log(`Failed percentage: ${failpercent.toFixed(2)}%`);
+
+//Exercise 3: Class + Constructor + Filter
+
+class Defects
+{
+    id:number;
+    severity:string;
+
+    constructor(id:number,severity:string)
+    {
+        this.id = id;
+        this.severity = severity;
+    }
+}
+
+const defectsa = [
+    new Defect(101, "High"),
+    new Defect(102, "Low"),
+    new Defect(103, "Critical")];
+
+defectsa.filter(d=>d.severity==='High'||d.severity==='Critical').forEach(d=>console.log(d.severity));
