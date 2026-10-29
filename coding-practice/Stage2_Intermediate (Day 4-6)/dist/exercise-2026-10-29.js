@@ -30,6 +30,6 @@ class Defect {
 const d1 = new Defect(1, 'Low');
 const d2 = new Defect(2, 'Medium');
 const d3 = new Defect(3, 'High');
-let defect_details = [d1, d2, d3];
-let newarray = [...defect_details, d1, d2, d3];
-console.log(typeof (newarray));
+const defects11 = [d1, d2, d3];
+const firstdefect = defects11[0];
+console.log(firstdefect.severity);
