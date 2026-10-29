@@ -63,3 +63,13 @@ function printArray<T>(items:T[]):void
 
 printArray<number>([10,20,30]);
 printArray<string>(["Playwright","Selenium","Cypress"]);
+
+//Exercise 5: QA Dashboard (Important)
+
+const modules = [
+ {module:"Login",passed:40,failed:5},
+ {module:"Search",passed:20,failed:10},
+ {module:"Payment",passed:35,failed:5}
+];
+
+console.log(modules.forEach(t=>t.module +' - '+(t.passed/(t.passed+t.failed))*100));
