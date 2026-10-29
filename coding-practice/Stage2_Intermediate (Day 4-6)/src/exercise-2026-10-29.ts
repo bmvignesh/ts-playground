@@ -50,5 +50,6 @@ const d1 = new Defect(1,'Low');
 const d2 = new Defect(2,'Medium');
 const d3 = new Defect(3,'High');
 
-const defect_details:Defect[] = [d1,d2,d3];
-console.log(typeof(defect_details));
+let defect_details:any[] = [d1,d2,d3];
+let newarray = [...defect_details,d1,d2,d3];
+console.log(typeof(newarray));
