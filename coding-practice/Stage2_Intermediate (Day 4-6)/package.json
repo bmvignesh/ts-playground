@@ -9,10 +9,10 @@
   "license": "ISC",
   "author": "Vignesh",
   "type": "commonjs",
-  "main": "exercise-2026-10-28.js",
+  "main": "exercise-2026-10-29.js",
   "scripts": {
     "build": "tsc",
-    "start": "node dist/exercise-2026-10-28.js",
+    "start": "node dist/exercise-2026-10-29.js",
     "postbuild": "git add . && git diff --cached --quiet || (git commit -m \"Stage 2 auto-commit after build\" && git push)"
   },
   "devDependencies": {
