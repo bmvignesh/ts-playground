@@ -51,7 +51,4 @@ const d2 = new Defect(102,'Low');
 const d3 = new Defect(103,'Critical');
 
 const alldefects: Defect[] = [d1,d2,d3];
-console.log(alldefects.filter(d=>{
-   if(d.severity==='High'||d.severity==='Critical')
-        d.severity; 
-}));
+console.log(alldefects.filter(d=>d.severity));
