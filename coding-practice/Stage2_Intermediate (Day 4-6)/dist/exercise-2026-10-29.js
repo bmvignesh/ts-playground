@@ -90,7 +90,18 @@ const testruns = [
     { testName: "Checkout", browser: "Firefox" }
 ];
 const browserCount = testruns.reduce((acc, curr) => {
-    acc[curr.browser] = (acc[curr.browser] ?? 0) + 1;
+    acc[curr.browser] = (acc[curr.browser] || 0) + 1;
     return acc;
 }, {});
 console.log(browserCount);
+//Exercise 2: Failed Test Percentage
+const testresults = [
+    { name: "Login", status: "Pass" },
+    { name: "Search", status: "Fail" },
+    { name: "Payment", status: "Pass" },
+    { name: "Checkout", status: "Fail" },
+    { name: "Profile", status: "Fail" }
+];
+const failcount = testresults.filter(t => t.status === 'Fail').length;
+const failpercent = failcount / testResults.length;
+console.log(`Failed percentage: ${failpercent}%`);
