@@ -204,3 +204,19 @@ console.log(executions12.reduce<Record<string,number>>((acc,curr)=>{
     acc[curr.environment] = (acc[curr.environment]??0)+1;
     return acc;
 },{}));
+
+//Find Total API Calls by Status Code
+
+const apiLogs = [
+    { endpoint: "/login", status: 200 },
+    { endpoint: "/search", status: 500 },
+    { endpoint: "/profile", status: 200 },
+    { endpoint: "/payment", status: 404 },
+    { endpoint: "/orders", status: 200 },
+    { endpoint: "/logout", status: 500 }
+];
+
+console.log(apiLogs.reduce<Record<number,number>>((acc,curr)=>{
+    acc[curr.status] = (acc[curr.status]??0)+1;
+    return acc;
+},{}));
