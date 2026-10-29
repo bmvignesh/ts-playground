@@ -144,3 +144,19 @@ console.log(apiLogs.reduce((acc, curr) => {
     acc[curr.status] = (acc[curr.status] ?? 0) + 1;
     return acc;
 }, {}));
+//Exercise 3: Class + Constructor
+class BrowserTest {
+    constructor(testName, browser) {
+        this.testName = testName;
+        this.browser = browser;
+    }
+    display() {
+        console.log(`Test: ${this.testName} Browser: ${this.browser}`);
+    }
+}
+const t1 = new BrowserTest("Login", "Chrome");
+const t2 = new BrowserTest("Search", "Firefox");
+const t3 = new BrowserTest("Checkout", "Edge");
+t1.display();
+t2.display();
+t3.display();
