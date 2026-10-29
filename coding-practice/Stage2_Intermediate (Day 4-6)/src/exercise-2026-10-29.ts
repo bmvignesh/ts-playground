@@ -51,4 +51,7 @@ const d2 = new Defect(102,'Low');
 const d3 = new Defect(103,'Critical');
 
 const alldefects: Defect[] = [d1,d2,d3];
-console.log(alldefects.forEach(t=>{return t.id=101}));
+for(let defect of alldefects)
+{
+    console.log(defect.severity);
+}
