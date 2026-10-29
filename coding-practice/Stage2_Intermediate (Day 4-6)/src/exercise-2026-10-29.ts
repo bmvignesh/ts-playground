@@ -51,7 +51,12 @@ const d2 = new Defect(102,'Low');
 const d3 = new Defect(103,'Critical');
 
 const alldefects: Defect[] = [d1,d2,d3];
-console.log(alldefects.filter(d=>d.severity));
+alldefects
+    .filter(d =>
+        d.severity === 'High' ||
+        d.severity === 'Critical'
+    )
+    .forEach(d => console.log(d.severity));
 
 //Exercise 4: Generic Array Printer
 
@@ -99,4 +104,26 @@ const executionss = [
  {suite:"Sanity",passed:40,failed:2}
 ];
 
+const summary = executionss.reduce(
+    (acc,curr)=>{
+        acc.totalPassed += curr.passed;
+        acc.totalFailed += curr.failed;
+        return acc;
+    },
+    {
+        totalPassed:0,
+        totalFailed:0
+    }
+);
 
+const totalTests =
+    summary.totalPassed +
+    summary.totalFailed;
+
+const passPercentage =
+    (summary.totalPassed/totalTests)*100;
+
+console.log(summary.totalPassed);
+console.log(summary.totalFailed);
+console.log(totalTests);
+console.log(passPercentage.toFixed(2));
