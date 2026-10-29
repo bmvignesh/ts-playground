@@ -31,3 +31,24 @@ const results1 = [
 ];
 
 console.log('Failed Percentage: ' +`${(results1.filter(t=>t.status ==='Fail').length/results1.length)*100}%`);
+
+//Exercise 3: Class + Array
+
+class Defect
+{
+    id:number;
+    severity:string;
+
+    constructor(id:number,severity:string)
+    {
+        this.id = id;
+        this.severity = severity;
+    }
+}
+
+const d1 = new Defect(1,'Low');
+const d2 = new Defect(2,'Medium');
+const d3 = new Defect(3,'High');
+
+const defect_details:Defect[] = [d1,d2,d3];
+console.log(typeof(defect_details));
