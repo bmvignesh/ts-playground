@@ -573,3 +573,31 @@ class Car extends Vehicle
 const car1 = new Car('Hyundai','Creta');
 car1.display();
 car1.show();
+
+//Exercise 2: Automation Scenario (BasePage → DashboardPage)
+
+class BasePage
+{
+    pageName:string;
+
+    constructor(pageName:string)
+    {
+        this.pageName = pageName;
+    }
+    open()
+    {
+        console.log(`Opening ${this.pageName}`);
+    }
+}
+
+class DashboardPage extends BasePage
+{
+    showWidgets()
+    {
+        console.log(`Displaying Widgets`);
+    }
+}
+
+const dashboard = new DashboardPage('Dashboard');
+dashboard.open();
+dashboard.showWidgets();
