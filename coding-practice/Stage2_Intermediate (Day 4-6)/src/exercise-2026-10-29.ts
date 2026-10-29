@@ -653,3 +653,38 @@ const laptop = new GamingLaptop();
 laptop.powerOn();
 laptop.connectWifi();
 laptop.startGame();
+
+//Exercise 5: QA Automation Framework
+
+class TestScript
+{
+    scriptName:string;
+
+    constructor(scriptName:string)
+    {
+        this.scriptName = scriptName;
+    }
+    execute()
+    {
+        console.log(`${this.scriptName} executing`);
+    }
+}
+
+class UITest extends TestScript
+{
+    browser:string;
+
+    constructor(scriptName:string,browser:string)
+    {
+        super(scriptName);
+        this.browser = browser;
+    }
+    show()
+    {
+        console.log(`Browser = ${this.browser}`);
+    }
+}
+
+const uiTest = new UITest('User Registration','Edge');
+uiTest.execute();
+uiTest.show();
