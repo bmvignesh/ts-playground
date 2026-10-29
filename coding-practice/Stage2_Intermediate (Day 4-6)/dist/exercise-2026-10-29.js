@@ -19,3 +19,4 @@ const results1 = [
     { name: "Checkout", status: "Fail" },
     { name: "Profile", status: "Fail" }
 ];
+console.log('Failed Percentage: ' + `${(results1.filter(t => t.status === 'Fail').length / results1.length)}`);
