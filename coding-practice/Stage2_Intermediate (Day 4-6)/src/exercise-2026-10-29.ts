@@ -57,10 +57,8 @@ console.log(alldefects.filter(d=>d.severity));
 
 function printArray<T>(items:T[]):void
 {
-    for(let i=0;i<items.length;i++)
-    {
-        console.log(items[i]);
-    }
+    for(let item of items)
+        console.log(item);
 }
 
 printArray<number>([10,20,30]);
