@@ -205,3 +205,22 @@ const bmodules = [
     { module: "Payments", passed: 25, failed: 5 }
 ];
 console.log(`Overall Pass %: ${bmodules.reduce((acc, curr) => (curr.passed / (curr.passed + curr.failed)) * 100, 0).toFixed(2)}`);
+//QA Dashboard (Real Automation Scenario)
+const suiteResults = [
+    {
+        suite: "Smoke",
+        executed: 50,
+        passed: 48
+    },
+    {
+        suite: "Regression",
+        executed: 120,
+        passed: 110
+    },
+    {
+        suite: "Sanity",
+        executed: 30,
+        passed: 28
+    }
+];
+suiteResults.forEach(t => console.log(`${t.suite} = (${t.passed}/${t.executed})*100%}`));
