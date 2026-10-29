@@ -246,3 +246,42 @@ const t3 = new BrowserTest("Checkout","Edge");
 t1.display();
 t2.display();
 t3.display();
+
+//Class + Method
+
+class Build
+{
+    buildNumber:number;
+    status:string;
+
+    constructor(buildNumber:number,status:string)
+    {
+        this.buildNumber = buildNumber;
+        this.status = status;
+    }
+
+    isSuccessful():string
+    {
+        return `Build ${this.buildNumber} : ${this.status}`;
+    }
+}
+
+const b1= new Build(101,"PASS");
+const b2 = new Build(102,"FAIL");
+const b3 = new Build(103,"PASS");
+
+console.log(b1.isSuccessful());
+console.log(b2.isSuccessful());
+console.log(b3.isSuccessful());
+
+//Generic Function
+
+function getLastItem<T>(items:T[]):T{
+    return items[items.length+1];
+}
+
+const inums = [10,20,30,40];
+const inames = ["Chrome","Firefox","Edge"];
+
+console.log(getLastItem<number>(nums));
+console.log(getLastItem<string>(inames));
