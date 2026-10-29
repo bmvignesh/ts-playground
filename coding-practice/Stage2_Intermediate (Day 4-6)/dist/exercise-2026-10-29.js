@@ -98,10 +98,10 @@ console.log(browserCount);
 const testresults = [
     { name: "Login", status: "Pass" },
     { name: "Search", status: "Fail" },
-    { name: "Payment", status: "Pass" },
+    { name: "Payment", status: "Fail" },
     { name: "Checkout", status: "Fail" },
     { name: "Profile", status: "Fail" }
 ];
 const failcount = testresults.filter(t => t.status === 'Fail').length;
 const failpercent = failcount / testresults.length * 100;
-console.log(`Failed percentage: ${failpercent}%`);
+console.log(`Failed percentage: ${failpercent.toFixed(2)}%`);
