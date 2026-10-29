@@ -34,7 +34,7 @@ const alldefects = [d1, d2, d3];
 console.log(alldefects.filter(d => d.severity));
 //Exercise 4: Generic Array Printer
 function printArray(items) {
-    items.forEach(t => t);
+    console.log(items.forEach(t => t));
 }
 printArray([10, 20, 30]);
 printArray(["Playwright", "Selenium", "Cypress"]);
