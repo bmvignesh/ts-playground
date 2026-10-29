@@ -314,4 +314,5 @@ const bmodules = [
     { module: "Payments", passed: 25, failed: 5 }
 ];
 
-console.log(`Overall Pass %: ${bmodules.reduce((acc,curr)=>(curr.passed/(curr.passed+curr.failed))*100,0)}`);
+console.log(`Overall Pass %: ${bmodules.reduce((acc,curr)=>
+    (curr.passed/(curr.passed+curr.failed))*100,0).toFixed(2)}`);
