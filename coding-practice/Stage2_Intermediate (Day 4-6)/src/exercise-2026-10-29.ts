@@ -283,5 +283,5 @@ function getLastItem<T>(items:T[]):T{
 const inums = [10,20,30,40];
 const inames = ["Chrome","Firefox","Edge"];
 
-console.log(getLastItem<number>(nums));
+console.log(getLastItem<number>(inums));
 console.log(getLastItem<string>(inames));

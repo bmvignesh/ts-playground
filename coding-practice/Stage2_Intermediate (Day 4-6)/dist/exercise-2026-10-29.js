@@ -182,5 +182,5 @@ function getLastItem(items) {
 }
 const inums = [10, 20, 30, 40];
 const inames = ["Chrome", "Firefox", "Edge"];
-console.log(getLastItem(nums));
+console.log(getLastItem(inums));
 console.log(getLastItem(inames));
