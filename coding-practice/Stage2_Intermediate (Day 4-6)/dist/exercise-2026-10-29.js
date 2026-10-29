@@ -184,3 +184,10 @@ const inums = [10, 20, 30, 40];
 const inames = ["Chrome", "Firefox", "Edge"];
 console.log(getLastItem(inums));
 console.log(getLastItem(inames));
+function printTwice(value) {
+    console.log(value);
+    console.log(value);
+}
+console.log(printTwice("Playwright"));
+console.log(printTwice(100));
+console.log(printTwice(true));

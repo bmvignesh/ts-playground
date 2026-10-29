@@ -285,3 +285,13 @@ const inames = ["Chrome","Firefox","Edge"];
 
 console.log(getLastItem<number>(inums));
 console.log(getLastItem<string>(inames));
+
+function printTwice<T>(value:T):void
+{
+    console.log(value);
+    console.log(value);
+}
+
+console.log(printTwice<string>("Playwright"));
+console.log(printTwice<number>(100));
+console.log(printTwice<boolean>(true));
