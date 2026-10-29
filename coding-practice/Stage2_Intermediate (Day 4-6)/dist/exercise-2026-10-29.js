@@ -389,3 +389,16 @@ class DashboardPage extends BasePage {
 const dashboard = new DashboardPage('Dashboard');
 dashboard.open();
 dashboard.showWidgets();
+//Exercise 3: Method Overriding
+class aNotification {
+    send() {
+        console.log(`Sending Generic Notification`);
+    }
+}
+class EmailNotification extends aNotification {
+    send() {
+        console.log(`Sending Email Notification`);
+    }
+}
+const email = new EmailNotification();
+email.send();
