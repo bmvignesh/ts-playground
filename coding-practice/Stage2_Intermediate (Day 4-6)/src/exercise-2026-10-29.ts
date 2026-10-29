@@ -337,4 +337,5 @@ const suiteResults = [
     }
 ];
 
-suiteResults.forEach(t=>console.log(t.suite + ' = ' +(t.passed/t.executed)*100+'%'))
+suiteResults.forEach(t=>console.log
+    (t.suite + ' = ' +((t.passed/t.executed)*100).toFixed(2)+'%'));
