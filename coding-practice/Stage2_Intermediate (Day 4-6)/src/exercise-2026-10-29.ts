@@ -295,3 +295,13 @@ function printTwice<T>(value:T):void
 printTwice<string>("Playwright");
 printTwice<number>(100);
 printTwice<boolean>(true);
+
+//Calculate Total Passed Tests
+
+const amodules = [
+    { module: "Authentication", passed: 45, failed: 5 },
+    { module: "Orders", passed: 30, failed: 10 },
+    { module: "Payments", passed: 25, failed: 5 }
+];
+
+console.log(`Total Passed: ${amodules.reduce((acc,curr)=>(acc+curr.passed),0)}`);
