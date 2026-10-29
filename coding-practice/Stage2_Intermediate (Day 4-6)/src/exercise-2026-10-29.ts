@@ -485,3 +485,32 @@ const app = new EcommerceApplication();
 app.open();
 app.login();
 app.order();
+
+//Exercise 5: QA Automation Scenario
+
+class aTestCase
+{
+    testName:string;
+
+    constructor(testName:string)
+    {
+        this.testName = testName;
+    }
+    run()
+    {
+        console.log(`${this.testName} running`);
+    }
+}
+
+class APITest extends aTestCase
+{
+    endpoint:string;
+    constructor(testName:string,endpoint:string)
+    {
+        super(testName);
+        this.endpoint=endpoint;
+    }
+}
+
+const api = new APITest('Login API Test','/login');
+api.run();

@@ -319,3 +319,20 @@ const app = new EcommerceApplication();
 app.open();
 app.login();
 app.order();
+//Exercise 5: QA Automation Scenario
+class aTestCase {
+    constructor(testName) {
+        this.testName = testName;
+    }
+    run() {
+        console.log(`${this.testName} running`);
+    }
+}
+class APITest extends aTestCase {
+    constructor(testName, endpoint) {
+        super(testName);
+        this.endpoint = endpoint;
+    }
+}
+const api = new APITest('Login API Test', '/login');
+api.run();
