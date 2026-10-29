@@ -269,3 +269,20 @@ class Manager extends Workerz {
 const m1 = new Manager("Vignesh", "QA");
 m1.display();
 console.log('Department: ' + m1.department);
+//Exercise 2: Real Automation Example
+class BaseTest {
+    constructor(browser) {
+        this.browser = browser;
+    }
+    launch() {
+        console.log(`Launching ${this.browser}`);
+    }
+}
+class LoginTest extends BaseTest {
+    execute() {
+        console.log(`Executing login test`);
+    }
+}
+const test = new LoginTest('Chrome');
+test.launch();
+test.execute();
