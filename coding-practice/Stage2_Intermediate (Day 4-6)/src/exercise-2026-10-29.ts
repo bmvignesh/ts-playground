@@ -164,6 +164,6 @@ const testresults = [
 
 const failcount = testresults.filter(t=>t.status==='Fail').length;
 
-const failpercent = failcount/testResults.length;
+const failpercent = failcount/testresults.length;
 
 console.log(`Failed percentage: ${failpercent}%`);
