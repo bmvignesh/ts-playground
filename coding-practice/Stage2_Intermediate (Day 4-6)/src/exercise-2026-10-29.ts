@@ -359,3 +359,4 @@ const asummary = testRuns.reduce((acc,curr)=>{
 });
 
 console.log(asummary);
+console.log('Overall Pass % = '+(asummary.totalPassed/asummary.totalExecuted));
