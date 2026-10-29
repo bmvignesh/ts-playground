@@ -339,3 +339,23 @@ const suiteResults = [
 
 suiteResults.forEach(t=>console.log
     (t.suite + ' = ' +((t.passed/t.executed)*100).toFixed(2)+'%'));
+
+    const testRuns = [
+    { executed: 100, passed: 90, failed: 10 },
+    { executed: 80, passed: 75, failed: 5 },
+    { executed: 120, passed: 110, failed: 10 }
+];
+
+const asummary = testRuns.reduce((acc,curr)=>{
+    acc.totalExecuted += curr.executed;
+    acc.totalPassed += curr.passed;
+    acc.totalFailed +=curr.failed;
+    return acc;
+},
+{
+    totalExecuted:0,
+    totalPassed:0,
+    totalFailed:0
+});
+
+console.log(asummary);
