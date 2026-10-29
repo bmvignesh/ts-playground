@@ -265,9 +265,6 @@ class Manager extends Workerz {
         super(name);
         this.department = department;
     }
-    display() {
-        console.log(`Department: ${this.department}`);
-    }
 }
 const m1 = new Manager("Vignesh", "QA");
 m1.display();
