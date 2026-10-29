@@ -268,4 +268,4 @@ class Manager extends Workerz {
 }
 const m1 = new Manager("Vignesh", "QA");
 m1.display();
-console.log(m1.department);
+console.log('Department: ' + m1.department);
