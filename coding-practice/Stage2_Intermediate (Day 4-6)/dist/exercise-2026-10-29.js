@@ -27,9 +27,8 @@ class Defect {
         this.severity = severity;
     }
 }
-const d1 = new Defect(1, 'Low');
-const d2 = new Defect(2, 'Medium');
-const d3 = new Defect(3, 'High');
-const defects11 = [d1, d2, d3];
-const firstdefect = defects11[0];
-console.log(firstdefect.severity);
+const d1 = new Defect(101, 'High');
+const d2 = new Defect(102, 'Low');
+const d3 = new Defect(103, 'Critical');
+const alldefects = [d1, d2, d3];
+console.log(alldefects.forEach(t => t.severity === 'High' || t.severity === 'Critical'));
