@@ -46,3 +46,21 @@ const modules = [
     { module: "Payment", passed: 35, failed: 5 }
 ];
 modules.forEach(t => console.log(`${t.module} -> ${((t.passed / (t.passed + t.failed)) * 100).toFixed(2)}%`));
+//Exercise 6: Interview Favorite
+const numss = [5, 10, 15, 20];
+const answer = numss
+    .filter(n => n > 10)
+    .map(n => n / 5)
+    .reduce((a, b) => a + b, 0);
+console.log(answer);
+/*
+filter result - [15,20]
+map result - [3,4]
+final reduce result - [7]
+*/
+//Bonus Challenge (Senior QA Manager Level)
+const executionss = [
+    { suite: "Smoke", passed: 25, failed: 3 },
+    { suite: "Regression", passed: 120, failed: 15 },
+    { suite: "Sanity", passed: 40, failed: 2 }
+];
