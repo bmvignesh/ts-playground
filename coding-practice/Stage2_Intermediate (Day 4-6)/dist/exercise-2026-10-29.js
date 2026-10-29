@@ -32,3 +32,9 @@ const d2 = new Defect(102, 'Low');
 const d3 = new Defect(103, 'Critical');
 const alldefects = [d1, d2, d3];
 console.log(alldefects.filter(d => d.severity));
+//Exercise 4: Generic Array Printer
+function printArray(items) {
+    console.log(items[0]);
+}
+printArray([10, 20, 30]);
+printArray(["Playwright", "Selenium", "Cypress"]);
