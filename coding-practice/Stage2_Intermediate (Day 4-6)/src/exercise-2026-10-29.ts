@@ -30,4 +30,4 @@ const results1 = [
     { name: "Profile", status: "Fail" }
 ];
 
-console.log('Failed Percentage: ' +`${(results1.filter(t=>t.status ==='Fail').length/results1.length)}`);
+console.log('Failed Percentage: ' +`${(results1.filter(t=>t.status ==='Fail').length/results1.length)*100}`);
