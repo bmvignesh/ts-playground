@@ -216,7 +216,7 @@ const apiLogs = [
     { endpoint: "/logout", status: 500 }
 ];
 
-console.log(apiLogs.reduce<Record<number,number>>((acc,curr)=>{
+console.log(apiLogs.reduce((acc,curr)=>{
     acc[curr.status] = (acc[curr.status]??0)+1;
     return acc;
-},{}));
+},{} as Record<number,number>));
