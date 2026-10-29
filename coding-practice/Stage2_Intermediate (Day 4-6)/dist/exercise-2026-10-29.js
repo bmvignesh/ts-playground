@@ -240,4 +240,4 @@ const asummary = testRuns.reduce((acc, curr) => {
     totalFailed: 0
 });
 console.log(asummary);
-console.log('Overall Pass % = ' + (asummary.totalPassed / asummary.totalExecuted));
+console.log('Overall Pass % = ' + ((asummary.totalPassed / asummary.totalExecuted) * 100).toFixed(2));
