@@ -360,3 +360,53 @@ const asummary = testRuns.reduce((acc,curr)=>{
 
 console.log(asummary);
 console.log('Overall Pass % = '+((asummary.totalPassed/asummary.totalExecuted)*100).toFixed(2));
+
+const bnums = [2,4,6,8,10];
+
+const banswer = bnums
+    .filter(n => n > 5)
+    .map(n => n / 2)
+    .reduce((acc,curr) => acc + curr,0);
+
+console.log(banswer);
+
+//banswer is 12
+//Result after filter() - [6,8,10]
+//Result after map() - [3,4,5]
+//Result after reduce() - 12
+
+//Exercise 1: Basic Inheritance
+
+class Workerz
+{
+    name:string;
+
+    constructor(name:string)
+    {
+        this.name = name;
+    }
+
+    display()
+    {
+        console.log(`Employee: ${this.name}`);
+    }
+}
+
+class Manager extends Workerz
+{
+    department:string;
+
+    constructor(name:string,department:string)
+    {
+        super(name);
+        this.department = department;
+    }
+    display()
+    {
+        console.log(`Department: ${this.department}`);
+    }
+}
+
+const m1 = new Manager("Vignesh","QA");
+m1.display();
+console.log(m1.department);
