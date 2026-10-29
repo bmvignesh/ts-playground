@@ -443,3 +443,41 @@ class UITest extends TestScript {
 const uiTest = new UITest('User Registration', 'Edge');
 uiTest.execute();
 uiTest.show();
+//Bonus Challenge
+class Animal {
+    sound() {
+        console.log('Animal Sound');
+    }
+}
+class Dog extends Animal {
+    sound() {
+        console.log(`Bark`);
+    }
+}
+const pet = new Dog();
+pet.sound();
+/*
+Which method executes?
+This will execute the sound method in Dog class
+Why does it execute?
+Because the sound method is overridden and for overridden methods, methods inside the child class are preferred
+What is the output?
+Output is Bark
+*/
+//Super Bonus (Real Interview Level)
+class Em {
+    constructor(name) {
+        this.name = name;
+    }
+}
+class QAEngineer extends Em {
+    constructor(name, automationTool) {
+        super(name);
+        this.automationTool = automationTool;
+    }
+    display() {
+        console.log(`${this.name} uses ${this.automationTool}`);
+    }
+}
+const qa = new QAEngineer("Vignesh", "Playwright");
+qa.display();
