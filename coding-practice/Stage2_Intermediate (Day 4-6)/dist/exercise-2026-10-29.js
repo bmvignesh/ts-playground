@@ -118,3 +118,16 @@ const defectsa = [
     new Defect(103, "Critical")
 ];
 defectsa.filter(d => d.severity === 'High' || d.severity === 'Critical').forEach(d => console.log(d.severity));
+//Find Tests Executed Per Environment
+const executions12 = [
+    { testName: "Login", environment: "QA" },
+    { testName: "Search", environment: "DEV" },
+    { testName: "Payment", environment: "QA" },
+    { testName: "Checkout", environment: "UAT" },
+    { testName: "Profile", environment: "QA" },
+    { testName: "Orders", environment: "DEV" }
+];
+console.log(executions12.reduce((acc, curr) => {
+    acc[curr.environment] = (acc[curr.environment] ?? 0) + 1;
+    return acc;
+}, {}));
