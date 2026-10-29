@@ -15,7 +15,17 @@ const runs:TestRun[] = [
     { testName: "Checkout", browser: "Firefox" }
 ];
 
-console.log(runs.reduce<Record<string, number>>((acc, curr) => {
-    acc[curr.browser] = (acc[curr.browser] ?? 0) + 1;
+console.log(runs.reduce<Record<string,number>>((acc,curr)=>{
+    acc[curr.browser] = (acc[curr.browser]??0)+1;
     return acc;
-}, {}));
+},{}));
+
+//Exercise 2: Failed Tests Percentage
+
+const results1 = [
+    { name: "Login", status: "Pass" },
+    { name: "Search", status: "Fail" },
+    { name: "Payment", status: "Pass" },
+    { name: "Checkout", status: "Fail" },
+    { name: "Profile", status: "Fail" }
+];
